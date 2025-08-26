@@ -1,4 +1,6 @@
+
 ### 1. Título tentativo
+<p align="justify">
 _"Reconocimiento de gestos de la mano mediante señales EMG de superficie: desarrollo de un sistema accesible con fines educativos y biomédicos."_
 ### 2. Introducción
 Los gestos son una de las formas más naturales e intuitivas de comunicación entre las personas y su entorno, El uso de las manos, principalmente, permite expresar ideas, transmitir intención y ejecutar acciones de forma rápida y sencilla. Esta gran variedad gestual ha dado lugar a sistemas como el lenguaje de señas y, recientemente, a su aplicación en el desarrollo de interfaces naturales de usuario, donde se busca que la interacción hombre-máquina sea cada vez más fluida [1].  
@@ -9,10 +11,13 @@ La literatura reciente muestra que la variabilidad fisiológica afecta directame
 Aunque algunos algoritmos de deep learning pueden alcanzar precisiones de hasta el 98% estos requieren recursos elevados de cómputo [4], lo que limita su implementación en entornos educativos. 
 En este escenario, investigaciones recientes han demostrado que se puede obtener resultados confiables con configuración simples y accesibles combinado con características de deep learning y de características clásicas [5]. Esto convierte al reconocimiento de gestos con EMG no solo en una tecnología prometedora, sino también en una herramienta formativa para que los estudiantes experimenten con adquisición, filtrado y clasificación de señales, reconociendo que el ruido y los artefactos son parte inherente del proceso de aprendizaje.
 ### 3. Problemática
+<p align="justify">
 El reconocimiento de gestos de la mano mediante EMG constituye una herramienta con gran futuro en campos como la rehabilitación, el control de prótesis mioeléctricas y en las interfaces hombre-máquina. Sin embargo, su implementación en ambientes prácticos enfrenta desafíos una importante brecha entre los avances de laboratorio y la realidad educativa o clínica [3, 4].
 Además, aunque algunos modelos avanzados de aprendizaje profundo han alcanzado precisiones superiores al 98% en el reconocimiento de gestos [4], estos algoritmos requieren una gran capacidad de cómputo, memoria y tiempo de entrenamiento, o que restringe su uso en contextos educativos o clínicos con recursos limitados. Por otra parte, enfoques simplificados que combinan características clásicas (MAV, RMS, wavelets) con deep features han logrado resultados superiores al 90 % incluso con sistemas de un solo canal [5]. Sin embargo, todavía no se dispone de soluciones accesibles y reproducibles que permitan a los estudiantes trabajar con señales EMG en un marco didáctico.
 De este modo, persiste una brecha entre el potencial demostrado de la EMG y su aprovechamiento en la formación académica. Contar con sistemas que permitan experimentar de manera clara con adquisición, filtrado y clasificación de señales resulta fundamental, reconociendo además que el ruido y los artefactos forman parte natural del aprendizaje en instrumentación biomédica.
+
 ### 4. Justificación
+<p align="justify">
 El desarrollo de sistemas accesibles para el reconocimiento de gestos de la mano mediante EMG resulta importante al responder a la necesidad concreta de contar con herramientas prácticas que permitan desenvolver en el entorno académico. Más allá de las limitaciones técnicas descritas en la problemática, la realización de este proyecto se basa en buscar demostrar que es posible implementar soluciones prácticas que refuercen el aprendizaje en la adquisición, filtrado y clasificación de señales, pero, además, que también siente las bases para aplicaciones futuras en rehabilitación y control prostético. 
 ### 5. Estado del arte
 #### Ámbito comercial
@@ -29,8 +34,11 @@ El desarrollo de sistemas accesibles para el reconocimiento de gestos de la mano
 
 ### 6. Objetivos
 - **Objetivo general:**
+<p align="justify">
 Desarrollar un sistema de reconocimiento de 3 a 5 gestos de la mano a partir de señales electromiográficas (EMG), aplicando técnicas de procesamiento de señales y algoritmos de clasificación.
+
 - **Objetivos específicos:**
+    
   - Aplicar técnicas de preprocesamiento y filtrado para reducir el ruido y mejorar la calidad de las señales.
   - Extraer características relevantes en el dominio temporal y frecuencial de las señales EMG.
   - Implementar clasificadores (como KNN, SVM o redes neuronales) para el reconocimiento de gestos.
