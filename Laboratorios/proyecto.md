@@ -3,7 +3,7 @@
 
 ### <img src="https://media.istockphoto.com/id/1150776990/es/vector/%C3%B0%C3%B0%CE%BCd-%C3%B1%C3%B01-4%C3%B1%C3%B01-2%C3%B01-2%C3%B1%C3%B0-2.jpg?s=612x612&w=0&k=20&c=Dh7C9Wj838ZBRs8nrG2MA5aOVunvb7-tmgBiNCGhVt0="  alt="Proyecto:Reconocimiento de gestos de la mano mediante señales EMG de superficie: desarrollo de un sistema accesible con fines educativos y biomédicos" width="50" height="50" style="vertical-align: middle; margin-right: 5px;" />Proyecto: Reconocimiento de gestos de la mano mediante señales EMG de superficie: desarrollo de un sistema accesible con fines educativos y biomédicos 
 
-### 2. Introducción
+### 1. Introducción
 <p align="justify">
 Los gestos son una de las formas más naturales e intuitivas de comunicación entre las personas y su entorno, El uso de las manos, principalmente, permite expresar ideas, transmitir intención y ejecutar acciones de forma rápida y sencilla. Esta gran variedad gestual ha dado lugar a sistemas como el lenguaje de señas y, recientemente, a su aplicación en el desarrollo de interfaces naturales de usuario, donde se busca que la interacción hombre-máquina sea cada vez más fluida [1].  
 En los últimos años, se han propuesto diferentes métodos para el reconocimiento de gestos. Entre ellos se encuentran los sistemas ópticos que usan cámaras para identificar el movimiento, sistemas por contracto como las pantallas táctiles y los sistemas basados en bioseñales que usa, como fuente de información, a la actividad fisiológica del usuario [1].
@@ -13,17 +13,17 @@ La literatura reciente muestra que la variabilidad fisiológica afecta directame
 Aunque algunos algoritmos de deep learning pueden alcanzar precisiones de hasta el 98% estos requieren recursos elevados de cómputo [4], lo que limita su implementación en entornos educativos. 
 En este escenario, investigaciones recientes han demostrado que se puede obtener resultados confiables con configuración simples y accesibles combinado con características de deep learning y de características clásicas [5]. Esto convierte al reconocimiento de gestos con EMG no solo en una tecnología prometedora, sino también en una herramienta formativa para que los estudiantes experimenten con adquisición, filtrado y clasificación de señales, reconociendo que el ruido y los artefactos son parte inherente del proceso de aprendizaje.
 
-### 3. Problemática
+### 2. Problemática
 <p align="justify">
 El reconocimiento de gestos de la mano mediante EMG constituye una herramienta con gran futuro en campos como la rehabilitación, el control de prótesis mioeléctricas y en las interfaces hombre-máquina. Sin embargo, su implementación en ambientes prácticos enfrenta desafíos una importante brecha entre los avances de laboratorio y la realidad educativa o clínica [3, 4].
 Además, aunque algunos modelos avanzados de aprendizaje profundo han alcanzado precisiones superiores al 98% en el reconocimiento de gestos [4], estos algoritmos requieren una gran capacidad de cómputo, memoria y tiempo de entrenamiento, o que restringe su uso en contextos educativos o clínicos con recursos limitados. Por otra parte, enfoques simplificados que combinan características clásicas (MAV, RMS, wavelets) con deep features han logrado resultados superiores al 90 % incluso con sistemas de un solo canal [5]. Sin embargo, todavía no se dispone de soluciones accesibles y reproducibles que permitan a los estudiantes trabajar con señales EMG en un marco didáctico.
 De este modo, persiste una brecha entre el potencial demostrado de la EMG y su aprovechamiento en la formación académica. Contar con sistemas que permitan experimentar de manera clara con adquisición, filtrado y clasificación de señales resulta fundamental, reconociendo además que el ruido y los artefactos forman parte natural del aprendizaje en instrumentación biomédica.
 
-### 4. Justificación
+### 3. Justificación
 <p align="justify">
 El desarrollo de sistemas accesibles para el reconocimiento de gestos de la mano mediante EMG resulta importante al responder a la necesidad concreta de contar con herramientas prácticas que permitan desenvolver en el entorno académico. Más allá de las limitaciones técnicas descritas en la problemática, la realización de este proyecto se basa en buscar demostrar que es posible implementar soluciones prácticas que refuercen el aprendizaje en la adquisición, filtrado y clasificación de señales, pero, además, que también siente las bases para aplicaciones futuras en rehabilitación y control prostético. 
 
-### 5. Estado del arte
+### 4. Estado del arte
 #### Ámbito comercial
 - **FREEEMG.-** Dispositivo inalámbrico para el análisis de electromiografía de superficie (EMG). Su precisión en la señal, la ausencia de cables, así como el diseño ligero y compacto de sus sondas permiten evaluar cualquier tipo de movimiento en diferentes partes del cuerpo sin alterar la naturalidad del mismo. El sistema cuenta con una amplia variedad de protocolos de análisis predefinidos, que permiten evaluar la actividad muscular durante ejercicios específicos. El software procesa la información recopilada y genera automáticamente resultados gráficos, lo que facilita la comparación inmediata con valores de referencia normales [6].
 
@@ -42,7 +42,7 @@ El desarrollo de sistemas accesibles para el reconocimiento de gestos de la mano
 <img src="https://patentimages.storage.googleapis.com/e5/29/ff/b0ac6a619c6c84/131102110428.png" alt="1" style="display:inline; width:200px;"/>
 <img src="https://patentimages.storage.googleapis.com/8f/ac/e5/156fec5b576d4a/131102110436.png" alt="2" style="display:inline; width:200px;"/>
 
-### 6. Objetivos
+### 5. Objetivos
 - **Objetivo general:**
 <p align="justify">
 Desarrollar un sistema de reconocimiento de 3 a 5 gestos de la mano a partir de señales electromiográficas (EMG), aplicando técnicas de procesamiento de señales y algoritmos de clasificación.
@@ -54,7 +54,7 @@ Desarrollar un sistema de reconocimiento de 3 a 5 gestos de la mano a partir de 
   - Implementar clasificadores (como KNN, SVM o redes neuronales) para el reconocimiento de gestos.
   - Evaluar el desempeño de los clasificadores utilizando métricas de precisión, sensibilidad y especificidad.
 
-### 7. Herramientas a utilizar
+### 6. Herramientas a utilizar
 - **Hardware:**
     - BITalino: dispositivo modular de adquisición biomédica que permite registrar señales fisiológicas mediante electrodos de superficie. Se usaría para capturar las señales EMG de la mano y el antebrazo, necesarias para el reconocimiento de gestos [9].
 - **Software:**
