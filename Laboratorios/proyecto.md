@@ -92,4 +92,6 @@ Desarrollar un sistema de reconocimiento de 3 a 5 gestos de la mano a partir de 
 
 Participación:
 Cada integrante tiene una participación de 33.3%
-
+- Eduardo Poma
+- Rodrigo Gorbeña
+- Jennifer Cancino
