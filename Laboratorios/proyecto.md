@@ -92,6 +92,4 @@ Desarrollar un sistema de reconocimiento de 3 a 5 gestos de la mano a partir de 
 
 Participación:
 Cada integrante tiene una participación de 33.3%
-=======
-[5]J. M. Fajardo, O. Gomez, and F. Prieto, “EMG hand gesture classification using handcrafted and deep features,” Biomedical Signal Processing and Control, vol. 63, p. 102210, Sep. 2020. [Online]. Available: https://doi.org/10.1016/j.bspc.2020.102210
->>>>>>> 31d3c80a6324f66552cdfcceaa29039229c497d5
+
