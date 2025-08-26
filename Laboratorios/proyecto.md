@@ -2,7 +2,9 @@
 ### 1. Título tentativo
 <p align="justify">
 _"Reconocimiento de gestos de la mano mediante señales EMG de superficie: desarrollo de un sistema accesible con fines educativos y biomédicos."_
+
 ### 2. Introducción
+<p align="justify">
 Los gestos son una de las formas más naturales e intuitivas de comunicación entre las personas y su entorno, El uso de las manos, principalmente, permite expresar ideas, transmitir intención y ejecutar acciones de forma rápida y sencilla. Esta gran variedad gestual ha dado lugar a sistemas como el lenguaje de señas y, recientemente, a su aplicación en el desarrollo de interfaces naturales de usuario, donde se busca que la interacción hombre-máquina sea cada vez más fluida [1].  
 En los últimos años, se han propuesto diferentes métodos para el reconocimiento de gestos. Entre ellos se encuentran los sistemas ópticos que usan cámaras para identificar el movimiento, sistemas por contracto como las pantallas táctiles y los sistemas basados en bioseñales que usa, como fuente de información, a la actividad fisiológica del usuario [1].
 En esta última alternativa las señales electromiográficas (EMG) han demostrado un gran potencial. La EMG es el registro de señales eléctricas generadas por los músculos durante su movimiento. Estas señales suelen ser captadas mediante electrodos superficiales para que puedan ser procesadas y utilizadas como entradas de control en diversas aplicaciones biomédicas, como la rehabilitación o el control de prótesis mioeléctricas. Su carácter no invasivo, la portabilidad de sensores y su gran potencial de integración convierten a la EMG en una opción atrayente para aplicación de rehabilitación y el desarrollo de interfaces biomédicas. No obstante, la adquisición y procesamiento de las señales EMG presentan importantes retos como la sensibilidad al ruido, la correcta colocación de electrodos y los costos asociados a la instrumentación [2]. 
