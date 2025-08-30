@@ -59,7 +59,7 @@ Desarrollar un sistema de reconocimiento de 3 a 5 gestos de la mano a partir de 
     - OpenSignals: software oficial de BITalino para la adquisición y visualización en tiempo real de las señales fisiológicas. Registrará las señales EMG de los sujetos de prueba y las exportará en formatos compatibles con MATLAB o Python para su posterior análisis [10].
     - MATLAB: plataforma de programación y análisis numérico con múltiples herramientas de procesamiento de señales y machine learning. Puede filtrar las señales EMG, extraer características relevantes y entrenar modelos de clasificación de los gestos de la mano [11].
     - Python: lenguaje de programación con múltiples librerías en ciencia de datos, procesamiento de señales y aprendizaje automático. Es una alternativa a MATLAB para desarrollar los algoritmos de clasificación de gestos y validación del desempeño [12].
-### 8. Referencias
+### 7. Referencias
 [1]G. Pomboza-Junez and J. A. Holgado-Terriza, “Análisis de exactitud de reconocimiento gestual aplicando SVM y k-NN en señales EMG,” Revista Ibérica de Sistemas e Tecnologias de Informação, no. 28, pp. 15–28, Oct. 2020.  
 
 [2]A. Suberviola Zuñiga, Control de un exoesqueleto mediante señales EMG (electromiográficas), Ph.D. dissertation, Univ. del País Vasco, 2019. [Online]. Available: http://hdl.handle.net/10810/41463 
