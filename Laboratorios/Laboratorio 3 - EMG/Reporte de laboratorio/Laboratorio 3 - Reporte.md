@@ -67,30 +67,30 @@ En el presente informe se hace uso del hardware BITalino junto con su kit de her
 Primero se alimenta el dispositivo BITalino con la bateria de litio de 3.7 V.
 Luego, se utilizó el canal EMG (A1) de la placa Bitalino 70-FB, conectando el cable con 3 electrodos Ag/AgCl circulares como se muestra en las imagenes.
 
-![image](conexión.png)
+![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/conexi%C3%B3n.png?raw=true)
 <center>Figura 1: Conexión EMG BITalino [10]</center>
 
 #### 4.2. Configuración OpenSignals
 Se ingresa al software OpenSignals (r)evolution.
-<center><img src="Inicio.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Inicio.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 2: Ingresando a OpenSignals [Elaboración propia]</center>
 
 <p align="justify">
 Abrimos el administrador de dispositivos de Opensignals (r)evolution para acceder y configurar nuestro BITalino.
 
-<center><img src="verde.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/verde.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 3: Administrador de dispositivos [Elaboración propia]</center>
 
 <p align="justify">
 Seleccionamos el BITalino haciendo clic en el botón ENABLED. El dispositivo estara activado si el botón ENABLED está en azul.
 
-<center><img src="Enabled.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Enabled.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 4: Activando el BITalino [Elaboración propia]</center>
 
 <p align="justify">
 Hacemos clic en el logotipo de BITalino para acceder a su configuración. En el menú desplegable seleccionamos solo el canal EMG y deseleccionamos todos los demás. Además, configuramos su frecuencia de muestreo en 1000 Hz.
 
-<center><img src="Confi.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Confi.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 5: Configurando el BITalino [Elaboración propia]</center>
 
 <p align="justify">
@@ -104,15 +104,15 @@ Activamos el canal de adquisición haciendo clic en el círculo rojo (grabar).
 El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario de prueba. Para ello se utilizó la Home Guide 1 - EMG del repertorio BITalino Lab Guides (Home Guides) [10].
 Retiramos la lámina protectora del electrodo antes de colocarlo en la piel.
 
-<center><img src="Despegar.gif" width="300" height="500"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Despegar.gif?raw=true" width="300" height="500"/></center>
 <center>Figura 6: Adquisición de la señal [Elaboración propia]</center>
 
 Colocamos el electrodo de referencia (tierra) en la zona del codo.
-<center><img src="Tierra.gif" width="300" height="500"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Tierra.gif?raw=true" width="300" height="500"/></center>
 <center>Figura 7: Adquisición de la señal [Elaboración propia]</center>
 
 Por último, colocamos los electrodos activos sobre el músculo a analizar.
-<center><img src="Colocar.gif" width="300" height="500"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Colocar.gif?raw=true" width="300" height="500"/></center>
 <center>Figura 8: Adquisición de la señal [Elaboración propia]</center>
 
 #### 4.4. Video de tomas y ploteo de OpenSignals
@@ -159,7 +159,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 #### 5.1. Posición I - Brazo
 - **Reposo:**
-  ![image](P1_R.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P1_R.png?raw=true)
   <center>fIGURA 9: Señales EMG del bíceps braquial en reposo: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   La señal se encuentra centrada en 0mV, con suaves oscilaciones distribuidas de manera irregular durante los 10 segundos de registro. La amplitud máxima no supera los ±0.2 mV, además, no se observan ráfagas de alta amplitud ni patrones repetitivos, lo que verifica la estabilidad característica de la fase de reposo. Luego de suprimir la componente DC y la aplicaciones los filtros aún se observa que la gráfica está centrada en cero pero esta vez con un rango reducido de oscilaciones, principalmente entre -0.1 a + 0.15mv, lo que indica una disminución del ruido de baja frecuencia y a preservación de la banda útil del EMG. En cuanto a la envolvente RMS, esta muestra un perfil estable con valores entre 0.015 y 0.025mV  en conjunto con algunos incrementos puntuales de hasta 0.035mV. Este comportamiento evidencia la ausencia de contracción voluntaria y la presencia de actividad basal del bíceps braquial vinculada a ruido fisiológico, fibras musculares aisladas y a la actividad eléctrica mínima de reposo. 
@@ -168,7 +168,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 
 - **Movimiento sin oposición:**
-  ![image](P1_SO.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P1_SO.png?raw=true)
   <center>Figura 10: Señales EMG del bíceps braquial sin oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   Se nota un aumento evidente en la amplitud en relación con la fase de reposo. La señal sin procesar presenta pulsos más extensos y constantes, con valores que oscilan entre –0.3 y +0.25 mV. El patrón es desigual, con oscilaciones más fuertes y duraderas que interrumpen el nivel base. Al aplicar los filtros, la señal se enfoca en cero y mantiene los picos de activación, los cuales aparecen con mayor definición y amplitudes entre –0.1 y +0.15 mV, distribuidos en ráfagas durante los 10 segundos de grabación. La envolvente RMS muestra un nivel promedio superior al de reposo, oscilando entre 0.025 y 0.035 mV, con aumentos transitorios que alcanzan hasta 0.045 mV, más comunes y duraderos en relación con la fase basal. Este patrón indica el reclutamiento ocasional de unidades motoras del bíceps braquial para producir la flexión del codo sin peso adicional, dentro de una contracción dinámica de intensidad baja a moderada.
@@ -177,7 +177,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 
 - **Movimiento con oposición:**
-  ![image](P1_CO.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P1_CO.png?raw=true)
   <center>Figura 11: Señales EMG del bíceps braquial con oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   Se aprecia un aumento muy marcado de la amplitud respecto a las fases anteriores: la señal cruda alcanza valores de hasta ±1.2 mV, con oscilaciones densas y continuas durante todo el registro. Tras aplicar el filtrado, la señal se centra en cero, manteniendo amplitudes que oscilan entre –1.0 y +1.0 mV, con un nivel de oscilación sostenido que refleja una actividad muscular más continua y uniforme en comparación con el movimiento libre. La envolvente RMS muestra un incremento estable en torno a 0.20–0.35 mV, sin descensos marcados hacia el nivel basal, lo que corresponde a una contracción mantenida de alta intensidad del bíceps braquial. Esto indica un patrón fisiológico que refleja un mayor reclutamiento de unidades motoras y el aumento en la frecuencia de descarga que son necesarias para vencer la resistencia.
@@ -187,7 +187,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 #### 5.2. Posición II - Antebrazo
 - **Reposo:**
-  ![image](P2_R.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P2_R.png?raw=true)
   <center>Figura 12: Señales EMG del flexor carpi radialis en reposo: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En la señal cruda se observa que la oscilación está centrada en torno a 0 mV, con fluctuaciones pequeñas que no superan ±0.15 mV y un patrón irregular que se mantiene durante los 10 segundos de registro. Luego del preprocesamiento, se observa que la señal se estabiliza alrededor de cero con un rango de oscilaciones más reducido, lo que refleja la disminución de ruido y la preservación de la banda fisiológica del EMG. En cuanto a la envolvente RMS, se observa que presenta valores bajos en torno a 0.015 - 0.020 mV y un pico inicial cercano a 0.040 mV(este valor  parece ser un error en la toma de la señal en el tiempo), que desciende rápidamente hacia un nivel basal constante. Este patrón evidencia la falta de contracción voluntaria y a la actividad basal mínima del flexor carpi radialis, donde solo se registran descargas aisladas de unidades motoras o ruido de fondo.
@@ -195,7 +195,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
   Según la que se ha reportado, la amplitud esperada de la señal EMG en reposo se encuentra en el rango de 5–50 µV RMS (0.005–0.05 mV), aunque esto depende de la colocación de los electrodos y del estado de relajación muscular; sin embargo, los  valores obtenidos concuerdan con el comportamiento reportado en la literatura [11, 13]. 
 
 - **Movimiento sin oposición:**
-  ![image](P2_SO.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P2_SO.png?raw=true)
   <center>Figura 13: Señales EMG del flexor carpi radialis sin oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En la señal sin procesar se observa un incremento de la amplitud, alcanzando valores cercanos a ±0.45 mV. Luego de la aplicación del filtro, la señal se centra en cero, pero aun presenta las oscilaciones marcadas( -0.15 y +0.15 mV), con picos que se repiten a los largo de todo el registro. La envolvente RMS evidencia un valor promedio más elevado que en reposo (0.03 y 0.05 mV) y algunos picos que alcanzan los 0.07 mV. Este patrón corresponde a un reclutamiento intermitente de unidades motoras del flexor carpi radialis durante la flexión de la muñeca sin resistencia externa.
@@ -204,7 +204,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 
 - **Movimiento con oposición:**
-  ![image](P2_CO.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P2_CO.png?raw=true)
   <center>Figura 14: Señales EMG del flexor carpi radialis con oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En esta fase se observa un gran aumento de la amplitud respecto al reposo y al movimiento libre. La señal sin procesar logra alcanzar valores de hasta ±1.2 mV, con oscilaciones continuas y de gran densidad a lo largo de la contracción. Luego de la aplicación del filtro y la eliminación del componente DC, la señal se mantiene centrada en cero y conserva amplitudes sostenidas entre -1.0 y +1.0 mV, lo que refleja la estabilidad e intensidad. La envolvente RMS muestra un ascenso progresivo hasta alcanzar valores en el rango de 0.30-0.45 mV, que se mantienen durante varios segundos antes de descender(finalización del esfuerzo). Este patrón corresponde a una contracción mantenida de alta intensidad del flexor carpi radialis, que se caracteriza por el reclutamiento masivo de unidades motoras y el aumento en la frecuencia de descarga para mantener la fuerza frente a la resistencia aplicada.
@@ -213,7 +213,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 #### 5.3. Posición III - Dedo
 - **Reposo:**
-  ![image](P3_R.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P3_R.png?raw=true)
   <center>Figura 15: Señales EMG del abductor pollicis brevis en reposo: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En la señal cruda se observa una oscilación centrada en torno a 0 mV, con fluctuaciones pequeñas que no superan ±0.20 mV. Luego del preprocesamiento, la señal aún se mantiene estable en cero, con amplitudes reducidas que se encuentran en el rango de  –0.1 y +0.1 mV, lo que refleja la eliminación de artefactos de baja frecuencia y la conservación de la banda fisiológica del EMG. La envolvente RMS presenta un base baja, con valores relativamente estables en torno a 0.020 - 0.025 mV y un pico aislado cercano a 0.040 mV al final del registro(que es probable que se deba a un error al ajustar los tiempos evaluados). Este comportamiento corresponde a la actividad en reposo mínima del abductor pollicis brevis que es un músculo intrínseco de la mano en el cual la activación voluntaria está asociada a la abducción del pulgar. 
@@ -221,7 +221,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 
 - **Movimiento sin oposición:**
-  ![image](P3_SO.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P3_SO.png?raw=true)
   <center>Figura 16: Señales EMG del abductor pollicis brevis sin oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En la señal cruda se observa el incremento de la amplitud comparado a la fase de reposo, con valores que se encuentran entre -0.3 y +0.3 mV. Además, presenta rafagas intensas y frecuencias que se encuentran distribuidas de roma irregular a lo largo del registro. Luego del preprocesamiento, la señal se centra en cero y con amplitudes entre - 0.2 y +0.2 mV. La envolvente RMS muestra un nivel medio superior al reposo, con valores que oscilan entre 0.035 y 0.060 mV, y picos transitorios que alcanzan hasta 0.075 mV. Este comportamiento coincide con la activación intermitente del músculo durante la abducción voluntaria del pulgar sin resistencia, que sugiere el reclutamiento temporal de un limitado  número de unidades motoras.
@@ -229,7 +229,7 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
 
 
 - **Movimiento con oposición:**
-  ![image](P3_CO.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/P3_CO.png?raw=true)
   <center>Figura 17: Señales EMG del abductor pollicis brevis con oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En esta fase se aprecia el incremento de la amplitud con respecto al reposo y movimiento libre. La señal cruda mantiene oscilaciones continuas y densas a lo largo de todo el registro con valores de hasta ±1.5 mV. Luego del preprocesamiento, la señal se centra en cero y su amplitud se ajusta a valores entre -0.7 a +0.8 mV. La envolvente RMS muestra valores estables alrededor de 0.20-0.30 mV, con picos que alcanzan 0.32 mV y que no regresan a la base. Este patrón corresponde a una contracción mantenida de alta intensidad del abductor pollicis brevis, en el cual se produce un reclutamiento masivo de unidades motoras y un aumento sostenido en la frecuencia de descarga para estabilizar la fuerza frente a la resistencia aplicada.
