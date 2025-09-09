@@ -96,8 +96,8 @@ Hacemos clic en el logotipo de BITalino para acceder a su configuración. En el 
 <p align="justify">
 Activamos el canal de adquisición haciendo clic en el círculo rojo (grabar).
 
-<center><img src="Grabar.gif" width="400" height="200"/></center>
-<center>Figura 5: Adquisición de la señal [Elaboración propia]</center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%203%20-%20EMG/Extras/Grabar.gif?raw=true" width="400" height="200"/></center>
+<center>Figura 6: Adquisición de la señal [Elaboración propia]</center>
 
 #### 4.3. Colocación de electrodos
 <p align="justify">
@@ -122,7 +122,7 @@ Por último, colocamos los electrodos activos sobre el músculo a analizar.
 
     | Brazo en reposo | Brazo sin oposición | Brazo con oposición |
     |-----------------|---------------------|---------------------|
-    | <video controls src="P1_R.mp4" title="Title"></video> | <video controls src="P1_SO.mp4" title="Title"></video> | <video controls src="P1_CO.mp4" title="Title"></video> |
+    | [![alt text](image.png)](https://studio.youtube.com/video/7ckIHEaJcAU/edit) | [![alt text](image-1.png)](https://studio.youtube.com/video/-uEV9ff91Qg/edit) | [![alt text](image-2.png)](https://studio.youtube.com/video/l8y1Qev-9UU/edit) |
 <center>Tabla 3: Videos de la posición I [Elaboración propia]</center>
 
 - Posición II - Antebrazo:
@@ -131,7 +131,7 @@ Por último, colocamos los electrodos activos sobre el músculo a analizar.
 
     | Antebrazo en reposo | Antebrazo sin oposición | Antebrazo con oposición |
     |-----------------|---------------------|---------------------|
-    | <video controls src="P2_R.mp4" title="Title"></video> | <video controls src="P2_SO.mp4" title="Title"></video> | <video controls src="P2_CO.mp4" title="Title"></video> |
+    | [![alt text](image-3.png)](https://studio.youtube.com/video/4wpJltBbW5M/edit)| [![alt text](image-4.png)](https://studio.youtube.com/video/oahxS7n7Fsg/edit) | [![alt text](image-5.png)](https://studio.youtube.com/video/4lYDqMGYTh4/edit)|
 <center>Tabla 4: Videos de la posición II [Elaboración propia]</center>
 
 - Posición III - Dedo:
@@ -140,7 +140,7 @@ Por último, colocamos los electrodos activos sobre el músculo a analizar.
 
     | Dedo en reposo | Dedo sin oposición | Dedo con oposición |
     |-----------------|---------------------|---------------------|
-    | <video controls src="P3_R.mp4" title="Title"></video> | <video controls src="P3_SO.mp4" title="Title"></video> | <video controls src="P3_CO.mp4" title="Title"></video> |
+    | [![alt text](image-6.png)](https://studio.youtube.com/video/TZXG5mEbC68/edit) | [![alt text](image-8.png)](https://studio.youtube.com/video/dV_JnVHRz_I/edit) | [![alt text](image-7.png)](https://studio.youtube.com/video/jzCyC5kxX8g/edit) |
 <center>Tabla 5: Videos de la posición III [Elaboración propia]</center>
 
 ### :bookmark_tabs:5. Resultados
@@ -233,7 +233,15 @@ Finalmente, se generaron tres visualización por cada músculo y fase:  la seña
   <center>Figura 17: Señales EMG del abductor pollicis brevis con oposición: cruda, preprocesada y rectificada con envolvente RMS. [Elaboración propia]</center>
   <p align="justify">
   En esta fase se aprecia el incremento de la amplitud con respecto al reposo y movimiento libre. La señal cruda mantiene oscilaciones continuas y densas a lo largo de todo el registro con valores de hasta ±1.5 mV. Luego del preprocesamiento, la señal se centra en cero y su amplitud se ajusta a valores entre -0.7 a +0.8 mV. La envolvente RMS muestra valores estables alrededor de 0.20-0.30 mV, con picos que alcanzan 0.32 mV y que no regresan a la base. Este patrón corresponde a una contracción mantenida de alta intensidad del abductor pollicis brevis, en el cual se produce un reclutamiento masivo de unidades motoras y un aumento sostenido en la frecuencia de descarga para estabilizar la fuerza frente a la resistencia aplicada.
-  <p align="justify">De acuerdo con la literatura, durante contracciones intensas o máximas, la amplitud de la sEMG puede situarse en un rango de 200–1000 µV RMS (0.2–1.0 mV), aunque esto se encuentra influenciado por la carga, la fatiga y la susceptibilidad a interferencias musculares en músculos pequeños de la mano [15, 16, 17]. Los valores observados se encuentran dentro de este rango de referencia; sin embargo, la gran intensidad de los picos y la presencia de oscilaciones irregulares sugieren que podría existir la interferencia en los electrodos,  lo que es común en músculos pequeños de la mano por su mayor susceptibilidad a la actividad de músculos adyacentes
+  <p align="justify">De acuerdo con la literatura, durante contracciones intensas o máximas, la amplitud de la sEMG puede situarse en un rango de 200–1000 µV RMS (0.2–1.0 mV), aunque esto se encuentra influenciado por la carga, la fatiga y la susceptibilidad a interferencias musculares en músculos pequeños de la mano [15, 16, 17]. Los valores observados se encuentran dentro de este rango de referencia; sin embargo, la gran intensidad de los picos y la presencia de oscilaciones irregulares sugieren que podría existir la interferencia en los electrodos,  lo que es común en músculos pequeños de la mano por su mayor susceptibilidad a la actividad de músculos adyacentes.
+
+### 6.Conclusiones
+
+<p align="justify">El análisis de las señales EEG obtenidas en el bíceps braquial, el flexor carpi radialis y el abductor pollicis brevis permitió identificar patrones diferenciados según el estado funcional del músculo. En reposo, todas las señales presentaron bajas y estables amplitudes (0.015 - 0.025 mV RMS), lo que sugiere una actividad mínima basal que es característica de las fibras musculares en ausencia de contracción voluntaria y guarda concordancia con lo que se ha reportado en la literatura para rangos típico de 5–50 µV RMS [11, 13]. Durante el movimiento libres se evidencia un aumento transitorio de la amplitud (0.025–0.045 mV RMS), que está asociando al reclutamiento intermitente y limitada de unidades motos para generar contracciones dinámicas de baja-moderada intensidad y concuerda con los valores descritos de 50–300 µV RMS [11, 15]. Finalmente, en la fase de movimiento con resistencia se registraron los mayores niveles de amplitud (0.20–0.45 mV RMS), manteniéndose  lo largo del tiempo, esto corresponde  a un reclutamiento masivo y a mayor frecuencia de descarga de las unidades motoras para mantener constante el esfuerzo,  dentro del rango de 200–1000 µV RMS que se asocia a contracciones intensas [15, 16, 17].
+ 
+<p align="justify">Entonces, los resultados muestran un progresión clara en la activación muscular que va desde el reposo hasta la construcción con resistencia, lo que confirma la utilidad del procesamiento digital implementado (eliminación de DC, filtrado, rectificación y cálculo de la envolvente RMS) para lograr la extracción de métricas robustas de activación. Además, se constatar que la relación entre amplitud EMG y fuerza, si bien es evidente en primera instancia, puede verse afectada por factores externos como la colocación de electrodos, la presencia de artefactos de movimiento o factores internos como la interferencia de músculos adyacentes (sobretodo en los músculos más pequeños como el abductor pollicis brevis). Estos resultado refuerza la necesidad de un control cuidadoso de la adquisición y el procesamiento, así como el contraste constante con rangos bibliográficos, para lograr un interpretación convalidación de los registros de EMG en contextos experimentales. 
+
+
 
 
 ### :notebook:Referencias
