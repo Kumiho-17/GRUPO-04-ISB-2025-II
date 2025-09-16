@@ -150,7 +150,7 @@ Por otro lado, la detección de picos R se realiza con algoritmo de búsqueda de
 
 #### 5.1. Posición - Muñeca
 - **Reposo:**
-  !![alt text](image-4.png)
+  ![alt text](image-4.png)
   <center>Figura 11: Señales ECG medida de la muñeca cuando se esta en reposo: envolvente, detección de picos R y frecuencia cardiaca. [Elaboración propia]</center>
   <p align="justify">
   La señal ECG en reposo presenta complejos QRS claramente definido con una amplitud aproximada de 0.15 - 0.20mV, mientras que la señal completa tiene una amplitud de qué ronda desde -0.15mv a 0.20 mV, ambos valores(tanto de la señal completa como el complejo QRS)  se encuentran dentro del  rango esperado en registros de superficie con sensores portátiles como BITalino(-1.5 a 1.5 mV) [11]. Las ondas P y T se diferencian con menor amplitud (0.05 - 0.13 mV), lo que concuerda con la fisiología del ECG, donde el complejo QRS presenta la mayor parte de la actividad eléctrica.
@@ -159,25 +159,25 @@ Por otro lado, la detección de picos R se realiza con algoritmo de búsqueda de
 
 - **Manteniendo la respiración:**
   - Conteniendo la respiración:
-  !![alt text](image-5.png)
+  ![alt text](image-5.png)
   <center>Figura 12: Señales ECG de la muñeca cuando se contiene la respiración: envolvente, FC y detección de R. [Elaboración propia]</center>
   <p align="justify">
   Durante la contención de las respiración de la toma 3, la señal EMG filtrada muestra amplitudes relativamente bajas rondando +- 0.075 mV, la envolvente estable resulta los complejos QRS y permite observar la dinámica de la señal de manera clara. Además, la detección de los pico R indica una frecuencia cardiaca mantenida entre 88 y 97 latidos por minuto, con algunas fluctuaciones pero sin un tendencia de creer muy pronunciada como la que se observa en la fase de recuperación. Esta estabilidad refleja  una gran influencia de la maniobra de panea, que genera un mayor visualización de la modulación vagal y tendencia a producir una relativa bradicardia o atenuación de la variabilidad [17, 18]. En la gráfica de la frecuencia cardiaca instantánea se puede confirmar esta interpretación ya que , aunque hay variaciones puntuales, la curva se mantiene dentro del rango reducido, mostrando la acción del sistema parasimpático sobre el nodo sinusal en condiciones de apnea voluntaria [18, 19]. Lo reportado en la literatura indica que la contención de la respiración produce una reducción transitoria en el retorno venoso y modificaciones de la presión intratorácica, lo que activa reflejos cardiovasculares que se interpretan como una frecuencia cardiaca contenida y con menor dispersión [17, 20]. 
 
   - Tras contener la respiración:
-  ![image](Tras.png)
+  ![alt text](image-8.png)
   <center>Figura 13: Señales ECG de la muñeca tras contención de la respiración: envolvente, FC y detección de R. [Elaboración propia]</center>
   <p align="justify">
   En la Toma 3 en la fase de recuperación tras la contención de respiración, la señal ECG filtrada muestras amplitudes alrededor de +- 0.2mV y  en la volvente RSM se nota estable, lo cual indica que existe una buena delimitación de los complejos QRS y una progresiva regularización de la actividad eléctrica cardiaca tras la apnea. La detección de los picos R evidencia que los intervalos R-R se reducen gradualmente, lo que refleja un aumento de la frecuencia cardiaca a los largo de los primeros segundos de recuperación. Esto se corrobora con la curva de la frecuencia cardiaca instantánea, que asciende de 75 a 100 latidos por minuto en un lapso de 3 a 4 segundos. Este comportamiento corresponde al fenomenos fisiológico que se describe en la literatura: durante la contención de la respiración suele observarse que una tendencia a la bradicardia transitoria, lugo un taquicardia compensatoria al redundar la ventilación, medida por la activación simpática y os cambio hemodinámicos intratoracicos [18, 20]. Por otro lado, la respuesta refleja la modulación autonómica en episodio de hipoxia intermitente y apnea, donde se produce overshoot de la frecuencia cardiaca durante la fase de recuperación en el sistema simpático[19, 21]. Entonces, la toma 3 se tomó como la representación más clara de este ciclo fisiológico porque muestran un señal más limpia, una detección robusta de los pico R y un patrón de variación de frecuencia cardiaca que coincide con otros reportes experimentales [17, 21]
 
 - **Actividad física:**
-  !![alt text](image-6.png)
+  ![alt text](image-6.png)
   <center>Figura 14: Señales ECG de la muñeca cuando se reliza actividad física: envolvente, detección de picos R y frecuencia cardiaca. [Elaboración propia]</center>
   <p align="justify">
   En la actividad física inmediata, señal ECG presentan un mayor amplitud  comparación de las fases de reposo o contención, con una envolvente en RMS mas marcas y estable, lo que sugiere una intensificación en la activa eléctrica ventricular asociada al incremento del gasto cardiaco.  Asimismo, se observa un acortamiento en los intervalos R-R característicos del ejercicio. La serie temporal de frecuencia cardiaca instantánea muestra valores elevados y variables entre 160 y 10 latidos por minuto, con oscilaciones rápidas que coinciden con la activación simpática y modulación aerodinámica durante el ejercicio físico. En la literatura, el ejercicio genera una respuesta cronotrópica positiva mediada por el sistema nervioso simpático, con liberación de catecolaminas  y aumento de la conducción nodal,  lo que acelera la frecuencia cardiaca y la potencia contráctil del corazón [18 ,22].  Estos resultados coinciden con lo que se ha reportado en estudios que describen cómo la frecuencia cardíaca durante ejercicio refleja no solo la intensidad del esfuerzo, sino también la capacidad adaptativa del sujeto para responder a las demandas metabólicas [22, 23].
 
 - **Post - ejercicio:**
-  !![alt text](image-7.png)
+  ![alt text](image-7.png)
   <center>Figura 15: Señales ECG de la muñeca post - actividad física: envolvente, detección de picos R y frecuencia cardiaca. [Elaboración propia]</center>
   <p align="justify">
   Luego de 15 minutos de actividad física, en la recuperación, la señal ECG muestra un cambio en el esfuerzo inmediato, donde la amplitud de los complejos QRS aumentaban hasta +- 0.6 mV, mientras que la refuencan cariada instantánea desciende hacía un rango de 112-116 latidos por minuto, mucho mejor a los observados en el ejercicio inmediación donde fue de 160 bpm. La señal envolvente revela una señal más regular, con menor dispersión y una dinámica más estable, lo que indica que el sistema nervioso autónomo se está restableciendo el equilibrio entre la modulación simpática y parasimpática. Lo que se obtuvo en el laboratorio condice con lo que reporta la literatura sobre la recuperación post-ejercicio, donde se describe una disminución progresiva de la frecuencia cardiaca tras la interrupción del ejercicio(esfuerzo), lo que se conoce como “heart rate recovery”, que depende la reactivación vagal y la suspensión gradual de la descarga simpática [22, 24]. La magnitud y la velocidad de esta caída en la frecuencia cardiaca se consideran marcadores de condición física y de pronóstico cardiovascular [23, 24]. En este caso, la redcoon observada luego de 15 minutos evidencia una respuesta fisiológica adecuada y consistente con estudios que señalan que aunque la frecuencia cardiaca no retorna de inmediato a valores basales(reposo), si se acerca al rango de reposo gracias al procedimiento el sistema parasimpático y la normalización hemodinámica[22, 24] .
