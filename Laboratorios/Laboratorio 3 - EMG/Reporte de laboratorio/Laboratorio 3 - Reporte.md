@@ -122,7 +122,7 @@ Por último, colocamos los electrodos activos sobre el músculo a analizar.
 
     | Brazo en reposo | Brazo sin oposición | Brazo con oposición |
     |-----------------|---------------------|---------------------|
-    | [![alt text](image.png)](https://studio.youtube.com/video/7ckIHEaJcAU/edit) | [![alt text](image-1.png)](https://studio.youtube.com/video/-uEV9ff91Qg/edit) | [![alt text](image-2.png)](https://studio.youtube.com/video/l8y1Qev-9UU/edit) |
+    | [![alt text](image.png)](https://youtu.be/7ckIHEaJcAU) | [![alt text](image-1.png)](https://youtu.be/-uEV9ff91Qg) | [![alt text](image-2.png)](https://youtu.be/l8y1Qev-9UU) |
 <center>Tabla 3: Videos de la posición I [Elaboración propia]</center>
 
 - Posición II - Antebrazo:
@@ -131,7 +131,7 @@ Por último, colocamos los electrodos activos sobre el músculo a analizar.
 
     | Antebrazo en reposo | Antebrazo sin oposición | Antebrazo con oposición |
     |-----------------|---------------------|---------------------|
-    | [![alt text](image-3.png)](https://studio.youtube.com/video/4wpJltBbW5M/edit)| [![alt text](image-4.png)](https://studio.youtube.com/video/oahxS7n7Fsg/edit) | [![alt text](image-5.png)](https://studio.youtube.com/video/4lYDqMGYTh4/edit)|
+    | [![alt text](image-3.png)](https://youtu.be/4wpJltBbW5M)| [![alt text](image-4.png)](https://youtu.be/oahxS7n7Fsg) | [![alt text](image-5.png)](https://youtu.be/4lYDqMGYTh4)|
 <center>Tabla 4: Videos de la posición II [Elaboración propia]</center>
 
 - Posición III - Dedo:
@@ -140,7 +140,7 @@ Por último, colocamos los electrodos activos sobre el músculo a analizar.
 
     | Dedo en reposo | Dedo sin oposición | Dedo con oposición |
     |-----------------|---------------------|---------------------|
-    | [![alt text](image-6.png)](https://studio.youtube.com/video/TZXG5mEbC68/edit) | [![alt text](image-8.png)](https://studio.youtube.com/video/dV_JnVHRz_I/edit) | [![alt text](image-7.png)](https://studio.youtube.com/video/jzCyC5kxX8g/edit) |
+    | [![alt text](image-6.png)](https://youtu.be/TZXG5mEbC68) | [![alt text](image-8.png)](https://youtu.be/dV_JnVHRz_I) | [![alt text](image-7.png)](https://youtu.be/jzCyC5kxX8g) |
 <center>Tabla 5: Videos de la posición III [Elaboración propia]</center>
 
 ### :bookmark_tabs:5. Resultados

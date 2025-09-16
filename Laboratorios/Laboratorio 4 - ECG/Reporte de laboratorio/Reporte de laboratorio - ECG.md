@@ -63,40 +63,40 @@ En este informe se hace uso del hardware BITalino, en conjunto con su kit de her
 #### 4.1. Conexión BITalino
 <p align="justify">
 Primero se alimenta el dispositivo BITalino con la bateria de litio de 3.7 V.
-<center><img src="Bateria.gif" width="200" height="350"/></center> GIF "Bateria"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Bateria.gif?raw=true width="200" height="350"/></center> GIF "Bateria"
 <center>Figura 1: Alimentación BITalino [Elaboración propia]</center>
 Luego, se utilizó el canal ECG (A2) de la placa Bitalino 71-01, conectando el cable con 3 electrodos Ag/AgCl circulares como se muestra a continuación.
 
-<center><img src="Canal.gif" width="350" height="200"/></center> GIF "Canal"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Canal.gif?raw=true width="350" height="200"/></center> GIF "Canal"
 <center>Figura 2: Conexión ECG BITalino [Elaboración propia]</center>
 
 #### 4.2. Configuración OpenSignals
 Se ingresa al software OpenSignals (r)evolution.
-<center><img src="Inicio.gif" width="400" height="200"/></center> GIF "Inicio"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Inicio.gif?raw=true width="400" height="200"/></center> GIF "Inicio"
 <center>Figura 3: Ingresando a OpenSignals [Elaboración propia]</center>
 
 <p align="justify">
 Abrimos el administrador de dispositivos de Opensignals (r)evolution para acceder y configurar nuestro BITalino.
 
-<center><img src="verde.gif" width="400" height="200"/></center> GIF "Verde"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Verde.gif?raw=true width="400" height="200"/></center> GIF "Verde"
 <center>Figura 4: Administrador de dispositivos [Elaboración propia]</center>
 
 <p align="justify">
 Seleccionamos el BITalino haciendo clic en el botón ENABLED. El dispositivo estara activado si el botón ENABLED está en azul.
 
-<center><img src="Enabled.gif" width="400" height="200"/></center> GIF "Enabled"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Enabled.gif?raw=true width="400" height="200"/></center> GIF "Enabled"
 <center>Figura 5: Activando el BITalino [Elaboración propia]</center>
 
 <p align="justify">
 Hacemos clic en el logotipo de BITalino para acceder a su configuración. En el menú desplegable seleccionamos solo el canal ECG y deseleccionamos todos los demás. Además, configuramos su frecuencia de muestreo en 1000 Hz.
 
-<center><img src="Confi.gif" width="400" height="200"/></center> GIF "Confi"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Confi.gif?raw=true width="400" height="200"/></center> GIF "Confi"
 <center>Figura 6: Configurando el BITalino [Elaboración propia]</center>
 
 <p align="justify">
 Activamos el canal de adquisición haciendo clic en el círculo rojo (grabar).
 
-<center><img src="Grabar.gif" width="400" height="200"/></center> GIF "Grabar"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Grabar.gif?raw=true width="400" height="200"/></center> GIF "Grabar"
 <center>Figura 7: Adquisición de la señal [Elaboración propia]</center>
 
 #### 4.3. Colocación de electrodos
@@ -104,15 +104,15 @@ Activamos el canal de adquisición haciendo clic en el círculo rojo (grabar).
 El siguiente procedimiento consiste en colocar los electrodos ECG en el usuario. Para ello se utilizó Where should I place my Electrocardiography (ECG) electrodes? - Home Knowlegde Base BITalino [10].
 Primero, retiramos la lámina protectora del electrodo antes de colocarlo en la piel.
 
-<center><img src="Despegar.gif" width="200" height="350"/></center> GIF "Despegar"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Despegar.gif?raw=true width="200" height="350"/></center> GIF "Despegar"
 <center>Figura 8: Retiro de lámina protectora [Elaboración propia]</center>
 
 Colocamos el electrodo de referencia (tierra) en la cresta ilíaca.
-<center><img src="Tierra.gif" width="200" height="350"/></center> GIF "Tierra"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Tierra.gif?raw=true width="200" height="350"/></center> GIF "Tierra"
 <center>Figura 9: Electrodo de referencia [Elaboración propia]</center>
 
 Por último, colocamos los electrodos activos sobre las muñecas.
-<center><img src="Activos.gif" width="200" height="350"/></center> GIF "Activos"
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%204%20-%20ECG/Extras/Activos.gif?raw=true width="200" height="350"/></center> GIF "Activos"
 <center>Figura 10: Electrodos activos [Elaboración propia]</center>
 
 #### 4.4. Video de tomas y ploteo de OpenSignals
@@ -126,7 +126,7 @@ Por último, colocamos los electrodos activos sobre las muñecas.
   
   | En reposo | Manteniendo la respiración | Actividad física | Post - ejercicio |
   |-----------|----------------------------|------------------|------------------|
-  | <video controls src="Reposo.mp4" title="Title"></video> Video "Reposo"| <video controls src="MR.mp4" title="Title"></video> Video "MR"| <video controls src="AF.mp4" title="Title"></video> Video "AF"| <video controls src="PE.mp4" title="Title"></video> Video "PE" |
+  | [![alt text](image.png)](https://youtu.be/airnGPQCCqg)Video "Reposo"| [![alt text](image-1.png)](https://youtu.be/o_dD3JmwmYE)Video "MR"|  [![alt text](image-2.png)](https://youtu.be/bLpguQ6qmTc)Video "AF"|  [![alt text](image-3.png)](https://youtu.be/NDG2V5fPt6o)Video "PE" |
 <center>Tabla 3: Videos de la posición muñeca [Elaboración propia]</center>
 
 ### :bookmark_tabs:5. Resultados
