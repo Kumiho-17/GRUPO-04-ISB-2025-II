@@ -141,11 +141,11 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
   <center>Tabla 3: Videos de los diferentes momentos en reposo [Elaboración propia]</center>
 
   - Resta: se le pidio al usuario que reste, mental y sucesivamente, 7 desde el número 100; se tomó una sola repetición de este ejercicio.
-    <center><video controls src="https://youtu.be/wDPcftfDTB8" title="Title"></video></center>
+    [![alt text](image-6.png)](https://youtu.be/wDPcftfDTB8)
     <center>Figura 14: Video de la señal cuando se resta [Elaboración propia]</center>
 
   - Parpadeo: el usuario parpadeaba cada dos segundos durante un minuto, se tomaron 3 repeticiones de este ejercicio.
-    <center><video controls src="https://youtu.be/HB1uzi7vyeU" title="Title"></video></center>
+    [![alt text](image-5.png)](https://youtu.be/HB1uzi7vyeU)
     <center>Figura 15: Video de la señal cuando se parpadea [Elaboración propia]</center>
 
   - Libre: el usuario primero escucho una canción agradable, para su persona, por 2 minutos, luego, se emitio una canción que no era de su agrado por otros 2 minutos; se realizo una sola toma por canción en este ejercicio.
