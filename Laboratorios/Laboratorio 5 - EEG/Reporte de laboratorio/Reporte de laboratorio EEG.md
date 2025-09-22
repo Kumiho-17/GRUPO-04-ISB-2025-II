@@ -72,44 +72,44 @@ En este informe se hace uso del hardware BITalino, en conjunto con su kit de her
 #### 4.1. Conexión BITalino
 <p align="justify">
 Primero se alimenta el dispositivo BITalino con la bateria de litio de 3.7 V.
-<center><img src="Bateria.gif" width="200" height="350"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Bateria.gif?raw=true" width="200" height="350"/></center>
 <center>Figura 2: Alimentación BITalino [Elaboración propia]</center>
 Luego, se utilizó el canal EEG (A4) de la placa Bitalino 6D-86, conectando el cable con 3 electrodos Ag/AgCl circulares como se muestra a continuación.
 
-<center><img src="Canal.gif" width="200" height="350"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Canal.gif?raw=true" width="200" height="350"/></center>
 <center>Figura 3: Conexión ECG BITalino [Elaboración propia]</center>
 
 #### 4.2. Configuración OpenSignals
 Primero, realizamos la conexión Bluetooth con el BITalino.
-<center><img src="Bluetooth.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Bluetooth.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 4: Conexión Bluetooth [Elaboración propia]</center>
 
 Luego, se ingresa al software OpenSignals (r)evolution.
-<center><img src="Inicio.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Inicio.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 5: Ingresando a OpenSignals [Elaboración propia]</center>
 
 <p align="justify">
 Abrimos el administrador de dispositivos de Opensignals (r)evolution para acceder y configurar nuestro BITalino.
 
-<center><img src="verde.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Verde.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 6: Administrador de dispositivos [Elaboración propia]</center>
 
 <p align="justify">
 Seleccionamos el BITalino haciendo clic en el botón ENABLED. El dispositivo estara activado si el botón ENABLED está en azul.
 
-<center><img src="Enabled.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Enabled.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 7: Activando el BITalino [Elaboración propia]</center>
 
 <p align="justify">
 Hacemos clic en el logotipo de BITalino para acceder a su configuración. En el menú desplegable seleccionamos solo el canal EEG (A4) y deseleccionamos todos los demás. Además, configuramos su frecuencia de muestreo en 1000 Hz.
 
-<center><img src="Confi.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Confi.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 8: Configurando el BITalino [Elaboración propia]</center>
 
 <p align="justify">
 Activamos el canal de adquisición haciendo clic en el círculo rojo (grabar).
 
-<center><img src="Grabar.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Grabar.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 9: Adquisición de la señal [Elaboración propia]</center>
 
 #### 4.3. Colocación de electrodos
@@ -117,17 +117,17 @@ Activamos el canal de adquisición haciendo clic en el círculo rojo (grabar).
 El siguiente procedimiento consiste en colocar los electrodos EEG en el usuario. Para ello se utilizó la Home Guide 3 - EEG del repertorio BITalino Lab Guides (Home Guides) [10].
 Primero, retiramos la lámina protectora del electrodo antes de colocarlo en la piel.
 
-<center><img src="Despegar.gif" width="200" height="350"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Despegar.gif?raw=true" width="200" height="350"/></center>
 <center>Figura 10: Retiro de lámina protectora [Elaboración propia]</center>
 
 Colocamos el electrodo de referencia (tierra) en la región del mastoide, detrás de la oreja.
-<center><img src="Tierra.gif" width="200" height="350"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Tierra.gif?raw=true" width="200" height="350"/></center>
 <center>Figura 11: Electrodo de referencia [Elaboración propia]</center>
 
 Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la frente.
-<center><img src="Fp1.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Fp1.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 12: Electrodos activos Fp1 [Elaboración propia]</center>
-<center><img src="Fp2.gif" width="400" height="200"/></center>
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/Fp2.gif?raw=true" width="400" height="200"/></center>
 <center>Figura 13: Electrodos activos Fp2 [Elaboración propia]</center>
 
 #### 4.4. Video de tomas y ploteo de OpenSignals
@@ -160,30 +160,30 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
 ##### 5.1.1. Reposo:
   A continuación se muestran las señales EEG filtradas correspondientes a la toma 1 para las tres condiciones de reposo: ojos abiertos, fijar vista y ojos cerrados. Se emplea únicamente esta toma como ejemplo gráfico para ilustrar de manera representativa la morfología temporal de la señal, dado que mostrar las tres repeticiones simultáneamente dificultará la claridad visual; sin embargo, el análisis cuantitativo posterior se realizó sobre las tres tomas.
   - Reposo con los ojos abiertos:
-  ![image](OA.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/OA.png?raw=true)
   <center>Figura 16: Señales EEG cuando se esta en reposo con los ojos abiertos. [Elaboración propia]</center>
   <p align="justify">
   Durante la condición de ojos abiertos la señal presenta oscilaciones de baja amplitud, más o menos irregulares, con la aparición de picos esporádicos que pueden ser asociado a artefactos fisiológicos como el paradero o micro contracciones musculares. Lo visto en la gráfica es coherente con lo que describe la literatura, donde el estado de ojos abiertos tiene por característica principal la supresión relativa del ritmo alfa debido a la entrada visual constante u a la mayor activación cortical y occipital [11]. 
 
   - Mirada fija en un objeto:
-  ![image](FV.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/FV.png?raw=true)
   <center>Figura 17: Señales EEG cuando se fija la mirada. [Elaboración propia]</center>
   <p align="justify">
   En la condición de fijación de vista se observa el aumento de la variabilidad de la amplitud y una mayor presencia de deflexiones marcas en comparación con la de solo ojos abiertos. Este comportamiento puede ser explicado a través de la atención visual sostenida y la reducción voluntaria de los párpados, lo cual modifica la dinámica de la acogida cortical y tiende a desplazar el equilibrio hacia frecuencia más rápidas(control atencionales mantenido). En recientes estudios se confirma que este estado representa un punto intermedio entre el reposo con ojos cerrados y tareas cognitivas mostrando patrones parciales de organización funcional [11].
 
   - Reposo con los ojos cerrados:
-  ![image](OC.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/OC.png?raw=true)
   <center>Figura 18: Señales EEG cuando se esta en reposo con los ojos cerrados. [Elaboración propia]</center>
   <p align="justify">
   En lo que corresponde a los ojos cerrados, se evidencian  oscilaciones rítmicas y de mayor amplitud, que sufren una mayor sincronización cortical. Este fenómeno corresponde a la activación del ritmo alfa occipital que es típica del reposo con ausencia de estimulación visual. Tal como se ha documentado, la potencia relativa en el alfa es significativamente mayor en ojos cerrados que en ojos abiertos [12], y se ha consolidado la interpretación de este ritmo como un marcador de inhibición cortical y estado de reposo sensorial [13].
 
   - Ánalisis Estadístico:
-  ![image](PSDR.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/PSDR.png?raw=true)
   <center>Figura 19: Densidad espectral de potencias (PSD). [Elaboración propia]</center>
   <p align="justify">
   En la imagen se muestra la densidad espectral de potencias (PSD) calculada mediante el método welch (ventana de 2 segundos) y promediada sobre las tres tomas realizada en la condición de reposo, La región sombreada indica la banda alfa (8-12 Hz). Se observa que, en la condición de ojos cerrados (verde), la banda alfa se mantiene ligeramente por encima de la correspondiente a ojos abiertos (azul) y fijación de vista (anaranjado), esto sugiere un ncmr lot relativo de potencia alfa al cerrar los ojos. Pero, la magnitud de la indefensión es pequeña y la superposición de las curvas refleja la variabilidad de los datos. Por ello, se usó el promedio para poder buscar la tendencia general y evitar el ruido visual que implicaría mostrar las tres repeticiones por separado. 
 
-  ![image](BandaR.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/BandaR.png?raw=true)
   <center>Figura 20: Resumen cuantitativo de la potencia en la banda alfa. [Elaboración propia]</center>
   <p align="justify">
   En la figura se resume cuantitativamente la potencia integrada en la banda alfa (barras promedio error estándar de la media SEM). Los resultados muestran un aumento prpgresivo desde ojos abiertos (1.7 µV²), fijación vista (3.0 µV²) y ojos cerrados (3.6 µV²). Esta tendencia coincide con lo esperado: el cierre ocular induce una sincronización occipital alfa más marcada, mientras que la fijación visual representa un estado intermedio de activación atencional que reduce parcialmente dicha oscilación. Lo encontrado en el laboratorio concuerda con algunos estudios que reportan mayor potencia alfa en reposo con ojos cerrados respecto a ojos abiertos [12], además, se describe la fijación como un estado funcional distinto, con cambios específicos en la organización de redes cerebrales [11].
@@ -195,24 +195,24 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
 
 ##### 5.1.2. Resta:
   - Tarea cognitiva:
-  <center><img src="R.png"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/R.png?raw=true"/></center>
   <center>Figura 21: Señales EEG cuando se realiza una tarea cognitiva. [Elaboración propia]</center>
   <p align="justify">
   En la figura se presenta la señal EEG filtrada (1-40 Hz) durante la condición de tarea cognitiva en la que el participante realizó una operación de restar de 7 en 7 desde 100. Se observa una señal de aproximadamente 70 segundos con oscilaciones moderadas que rondan los ±20 µV y presencia de algunas deflexiones abruptas. Las deflexiones pueden estar asociadas a artefactos fisiológicos (parpadeos, micro contracciones musculares) o también a pico de activación cortical que están relacionadas con la carga cognitiva. En general, la señal presenta mayor variabilidad en comparación con el estado de reposo, lo que concuerda con el incremento en el reclutamiento de recursos neurales durante tareas que demandan atención y memoria de trabajo [14, 15].
 
   - Toma de 30 segundos en reposo:
-  <center><img src="30R.png"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/30R.png?raw=true"/></center>
   <center>Figura 22: Segmento de la señal EEG cuando se esta en reposo con los ojos abiertos. [Elaboración propia]</center>
   <p align="justify">
   En contraste, la figura 22 muestra un segmento de 30 segundos de una de las tomas de reposo con ojos abiertos, utilizando como condición basal para comparación. La señal presenta oscilación de menor amplitud (exceptuando por algunos picos) y menor variabilidad en relación con la condición de tarea. Esta diferencia sugiere un mayor nivel de sincronización y menor demanda de procesamiento en reposo, lo que concuerda con lo que se ha reportado para estados bajo carga cognitiva [14]. 
 
   - Ánalisis Estadístico:
-  ![image](PSDResta.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/PSDResta.png?raw=true)
   <center>Figura 23: Densidad espectral de potencias (PSD). [Elaboración propia]</center>
   <p align="justify">
   En la figura 23 se muestran las curvas de densidad espectral de potencia obtenidas mediante el método de welch para la condición de reposo con ojos abiertos (promedio de tres tomas) Y para la tarea cognitiva (única toma). La región sombreada corresponde a la branda Beta (13-30Hz). Se observa que la curva de la tarea no presenta un claro incremento en Beta con respecto al reposo, sino que por el contrario, la PSD de la tarea se sitúa por debajo de la condición basal en gran parte de esta banda. 
 
-  ![image](BandaResta.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/BandaResta.png?raw=true)
   <center>Figura 24: Resumen cuantitativo de la potencia en la banda alfa. [Elaboración propia]</center>
   Potencia β (13–30 Hz):
   <center>Reposo (promedio 3 tomas): 2.4360 µV²  (SEM = 0.6056)</center>
@@ -223,7 +223,7 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
   <p align="justify">En la figura 24 se resume cuantitativamente la potencia integrada en Beta para ambas condiciones. El promedio en reposo fue de 2.44 µV² (SEM = 0.61), mientras que la tarea cognitiva registró un valor de 1.88 µV². Esto representa una diferencia absoluta de –0.56 µV² y un cambio relativo de –22.9 %. Lo que se eocntró resulta inesperado pues en la literatura se describe un cinremende otenicna en Bet dutantwa tareas de atención, memoria de trabajo a cálculos mentales [14 - 16].
 
 ##### 5.1.3. Parpadeo:
-  <center><img src="P.png"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/P.png?raw=true"/></center>
   <center>Figura 25: Tomas de las señales ECG cuando se realiza un parpadeo constante. [Elaboración propia]</center>
   <p align="justify">
   En las tres tomas de un minuto cada una, la detección de parpadeos con el criterio ±80 µV detecto 0 eventos en todos los casos. Esto se explica porque el módulo EEG de BITalino presenta un rango de entrada de ±39.49 µV [17], lo que imposibilita registrar señales de amplitud superior a este umbral.
@@ -234,7 +234,7 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
 
 ##### 5.1.4. Libre:
   - Ánalisis Estadístico:
-  ![image](PSDM.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/PSDM.png?raw=true)
   <center>Figura 26: Densidad espectral de potencias (PSD). [Elaboración propia]</center>
   <p align="justify">
   La estimación espectral mediante el método Welch es adecuada para este análisis, pues reduce la varianza de la PSD y permite hacer comparaciones  en condiciones de forma robusta en EEG [21, 22]. En la figura, las curvas correspondientes a música que gusta y música que no sugiere se superen ampliamente en la mayor del rango 0-40 Hz, sin un cio alfa marcado, lo que sugiere que las no existen muchas diferencias globales.
@@ -243,7 +243,7 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
   <p align="justify"> 
   Los resultados de la integración espectral muestran que la potencias en bandas  θ, α y β fue notablemente mayores durante la condición de música que gusta frente a la de música que no gusta. En especial se observó aumento de 0.319 µV² en θ, 0.085 µV² en α y 0.463 µV² en β. Estos incrementos (modestos) confirman la tendencia ya sugerida en la curva de PSD estimada en Welch, que es un método robusto y ampliamente utilizado en el análisis de señales EEG [21, 22].
 
-  ![image](BandaM.png)
+  ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%205%20-%20EEG/Extras/BandaM.png?raw=true)
   <center>Figura 27: Resumen cuantitativo de las potencias de bandas theta, alfa y beta. [Elaboración propia]</center>
   <p align="justify">
   En la comparación de potencia por bandas refuerza los hallazgos observados en la PSD. En todas las frecuencias analizadas, la condición de música que gusta presto valores superiores(aunque ligeramente) respecto a la música que no gusta:  θ = 2.717 vs. 2.398 µV², α = 1.320 vs. 1.235 µV² y β = 2.464 vs. 2.001 µV².
