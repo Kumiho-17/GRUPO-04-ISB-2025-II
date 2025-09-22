@@ -137,22 +137,22 @@ Por último, colocamos los electrodos activos en las posiciones Fp1 y Fp2 de la 
 
   | Ojos abiertos | Fijación de vista | Ojos cerrados |
   |---------------|-------------------|---------------|
-  | <video controls src="OA.mp4" title="Title"></video> | <video controls src="FV.mp4" title="Title"></video> | <video controls src="OC.mp4" title="Title"></video> |
+  |[![alt text](image.png)](https://youtu.be/1qJOuY2MASQ)| [![alt text](image-2.png)](https://youtu.be/8_Lt5MzyNQ4)| [![alt text](image-1.png)](https://youtu.be/yNSh1gRJsFM) |
   <center>Tabla 3: Videos de los diferentes momentos en reposo [Elaboración propia]</center>
 
   - Resta: se le pidio al usuario que reste, mental y sucesivamente, 7 desde el número 100; se tomó una sola repetición de este ejercicio.
-    <center><video controls src="R.mp4" title="Title"></video></center>
+    <center><video controls src="https://youtu.be/wDPcftfDTB8" title="Title"></video></center>
     <center>Figura 14: Video de la señal cuando se resta [Elaboración propia]</center>
 
   - Parpadeo: el usuario parpadeaba cada dos segundos durante un minuto, se tomaron 3 repeticiones de este ejercicio.
-    <center><video controls src="P.mp4" title="Title"></video></center>
+    <center><video controls src="https://youtu.be/HB1uzi7vyeU" title="Title"></video></center>
     <center>Figura 15: Video de la señal cuando se parpadea [Elaboración propia]</center>
 
   - Libre: el usuario primero escucho una canción agradable, para su persona, por 2 minutos, luego, se emitio una canción que no era de su agrado por otros 2 minutos; se realizo una sola toma por canción en este ejercicio.
   
   | Música agradable | Música desagradable |
   |------------------|---------------------|
-  | <video controls src="MA.mp4" title="Title"></video> | <video controls src="MD.mp4" title="Title"></video> |
+  | [![alt text](image-3.png)](https://youtu.be/kQsZQR4eNWY)| [![alt text](image-4.png)](https://youtu.be/uA0cUJQFUVI) |
 <center>Tabla 4: Videos de los dos tipos de música [Elaboración propia]</center>
 
 ### :chart_with_upwards_trend:5. Señales
