@@ -69,10 +69,10 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 
 | Filtro | Parámetros | Respuesta de frecuencia | Retraso de grupo | Diagrama polos y ceros |
 |--------|------------|-------------------------|------------------|------------------------|
-| **Butterworth** | ![image](F20\B_20_emg_p.png) | ![image](F20\B_20_emg_rf.png) | ![image](F20\B_20_emg_rg.png) | ![image](F20\B_20_emg_d.png) |
-| **Chebyshev 1** | ![image](F20\C1_20_emg_p.png) | ![image](F20\C1_20_emg_rf.png) | ![image](F20\C1_20_emg_rg.png) | ![image](F20\C1_20_emg_d.png) |
-| **Chebyshev 2** | ![image](F20\C2_20_emg_p.png) | ![image](F20\C2_20_emg_rf.png) | ![image](F20\C2_20_emg_rg.png) | ![image](F20\C2_20_emg_d.png) |
-| **Hamming** | ![image](F20\H_20_emg_p.png) | ![image](F20\H_20_emg_rf.png) | ![image](F20\H_20_emg_rg.png) | ![image](F20\H_20_emg_d.png) |
+| **Butterworth** | ![alt text](image.png) | ![alt text](image-1.png) | ![alt text](image-2.png) | ![alt text](image-3.png)|
+| **Chebyshev 1** | ![alt text](image-4.png) | ![alt text](image-5.png) | ![alt text](image-6.png) | ![alt text](image-7.png) |
+| **Chebyshev 2** | ![alt text](image-8.png) | ![alt text](image-9.png) | ![alt text](image-10.png)| ![alt text](image-11.png) |
+| **Hamming** | ![alt text](image-12.png)| ![alt text](image-13.png) | ![alt text](image-14.png) | ![alt text](image-15.png) |
 <center>Tabla 3: Filtros para 20-450 Hz [Elaboración propia]</center>
 
 ##### 4.1.2. Filtros rechazabanda de 60 Hz
@@ -81,20 +81,20 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 
 | Filtro | Parámetros | Respuesta de frecuencia | Retraso de grupo | Diagrama polos y ceros |
 |--------|------------|-------------------------|------------------|------------------------|
-| **Butterworth** | ![image](F60\B_60_emg_p.png) | ![image](F60\B_60_emg_rf.png) | ![image](F60\B_60_emg_rg.png) | ![image](F60\B_60_emg_d.png) |
-| **Chebyshev 1** | ![image](F60\C1_60_emg_p.png) | ![image](F60\C1_60_emg_rf.png) | ![image](F60\C1_60_emg_rg.png) | ![image](F60\C1_60_emg_d.png) |
-| **Chebyshev 2** | ![image](F60\C2_60_emg_p.png) | ![image](F60\C2_60_emg_rf.png) | ![image](F60\C2_60_emg_rg.png) | ![image](F60\C2_60_emg_d.png) |
-| **Hamming** | ![image](F60\H_60_emg_p.png) | ![image](F60\H_60_emg_rf.png) | ![image](F60\H_60_emg_rg.png) | ![image](F60\H_60_emg_d.png) |
+| **Butterworth** | ![alt text](image-16.png) | ![alt text](image-17.png)| ![alt text](image-18.png)| ![alt text](image-19.png) |
+| **Chebyshev 1** | ![alt text](image-20.png) | ![alt text](image-21.png) | ![alt text](image-22.png) | ![alt text](image-23.png) |
+| **Chebyshev 2** | ![alt text](image-24.png) | ![alt text](image-25.png) | ![alt text](image-26.png) |![alt text](image-27.png) |
+| **Hamming** | ![alt text](image-28.png) | ![alt text](image-29.png) |![alt text](image-30.png) | ![alt text](image-31.png) |
 <center>Tabla 4: Filtros para 60 Hz [Elaboración propia]</center>
 
 #### 4.2. Configuración PYFDA para ECG
 ##### 4.2.1. Filtros para 0.5-40 Hz
 | Filtro | Parámetros | Respuesta de frecuencia | Retraso de grupo | Diagrama polos y ceros |
 |--------|------------|-------------------------|------------------|------------------------|
-| **Butterworth** | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/but.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/BUT%20RESPON.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/BUT%20GROUP.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/BUT%20POLO.png?raw=true) |
-| **Chebyshev 1** | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%201.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE1%20RESPON.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%20GROUP.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%201%20POLO.png?raw=true) |
-| **Chebyshev 2** | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%202.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%202%20RESPON.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%202%20GROUP.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/CHE%202%20POLO.png?raw=true) |
-| **Hamming** | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/HAM.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/HAM%20RESPON.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/HAM%20GROUP.png?raw=true) | ![image](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/ECG_images/HAM%20POLO.png?raw=true) |
+| **Butterworth** |  | |  ||
+| **Chebyshev 1** |  |  |  | |
+| **Chebyshev 2** |  |  |  |  |
+| **Hamming** | |  |  |  |
 <center>Tabla 5: Filtros para 0.5-[40-50] Hz [Elaboración propia]</center>
 
 
@@ -103,43 +103,43 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 ##### 5.1.1. Filtros pasabanda de 20-450 Hz
   <p align="justify">El filtro Butterworth IRR pasabanda 20-450Hz presenta una respuesta en magnitud plana en la banda de paso, lo que asegura que las frecuencias características de la señal EMG se conserven insultantes.  Sin embargo, la respuesta en fase no es lineal, lo que genera distorsión temporal de la señal, esto también se refleja en el retardo de grupo, que alcanza valores elevados en los bordes del espectro (50 ms) y menores en la banda central (5-10ms). En el diagrama de polos y ceros se muestra que todos los polos están dentro del círculo unitario y los ceros se ubican simétricamente en +/- 1, lo que confirma su estabilidad y define la selectividad en los extremos de la banda.
 
-  <center><img src="EMG_Butter_20.png" width="450" height="200"/></center>
+  <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F20_EMG/EMG_Butter_20.png?raw=true width="450" height="200"/></center>
   <center>Figura 1: Filtro Butterworth IRR pasabanda de 20-450 Hz. [Elaboración propia]</center>
   
   <p align="justify">El Chebyshev I pasabanda 20-450 Hz muestra en magnitud una banda pasante definida  con ondulaciones visibles a lo largo del paso y una caída muy pronunciada en los bordes. En la fase desciende de manera no lineal a medida que aumenta la frecuencia. El retardo de grupo presenta picos cerca de las frecuencias de corte, destacando uno en la zonas bajas y otro menor hacia el límite superior, sin embargo, en la zona central se mantienen reducidos. En el diagrama de polos y ceros, los polos parecen distribuidos al borde inferior del círculo unitario y los ceros están simétricos en el eje real. 
 
-  <center><img src="EMG_C1_20.png" width="450" height="200"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F20_EMG/EMG_C1_20.png?raw=true width="450" height="200"/></center>
   <center>Figura 2: Filtro Chebyshev I pasabanda de 20-450 Hz. [Elaboración propia]</center>
 
   <p align="justify">En Chebyshev II pasabanda 20–450 Hz muestra en magnitud una banda pasante plana y un rechazo muy selectivo fuera de banda, pero con ondulaciones en la banda de rechazo. La fase desciende de forma no lineal con cambios bruscos hacia los bordes del espectro. El retardo de grupo es bajo y estable en la zona central y presenta picos cercanos a las frecuencias de corte, indicando mayor retraso para componentes próximos a los límites. En el diagrama de polos y ceros, los ceros se ubican cerca del círculo unitario en las bandas rechazadas y los polos quedan dentro del círculo, confirmando estabilidad y la alta selectividad observada.
 
-  <center><img src="EMG_C2_20.png" width="450" height="200"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F20_EMG/EMG_C2_20.png?raw=true" width="450" height="200"/></center>
   <center>Figura 3: Filtro Chebyshev II pasabanda de 20-450 Hz. [Elaboración propia]</center>
 
   <p align="justify">La magnitud del filtro FIR diseñado con ventana Hamming muestra un paso de banda limitado en rango de 20-450Hz, con una atenuación pronunciada en la banda de rechazo, Sin embargo, presentan lóbulos secundario, lo que reduce la capacidad de aenciancion fuera de la banda. En cuanto a la fase, se observa que presenta una respuesta lineal en todo el espectro, esto asegura que no se produzca una distorsión de fase y que la morfología de la onda EMG se conserve. El retardo en el grupo se mantiene constante(confirma el comportamiento lineal de la fase), pero implica una latencia fija alta. Por último, el diagrama de polos y ceros muestra únicamente ceros distribuidos sobre la superficie unitaria y polos en el origen, lo cual es propio de los filtros FIR y garantiza estabilidad y fase lineal a costa de un mayor orden (N=400).
 
-  <center><img src="EMG_H_20.png" width="450" height="200"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F20_EMG/EMG_H_20.png?raw=true" width="450" height="200"/></center>
   <center>Figura 4: Filtro Hamming FIR pasabanda de 20-450 Hz. [Elaboración propia]</center>
 
 ##### 5.1.2. Filtros rechazabanda de 60 Hz:
   <p align="justify">El filtro bandstop (notch) a 60 Hz Butterworth muestra en magnitud una muesca muy estrecha centrada en 60Hz con fuerte atenuación , manteniendo la ganancia prácticamente inalterada en el respeto del espectro. La fase presenta cambios abruptos únicamente en las cercanías de la muesca, mientras que fuera de esa región se comporta de forma estable. El retardo del grupo parece mostrar un pico pronunciado alrededor de 60Hz y valores reducido en el resto de frecuencias. En el diagrama polo y cero se observan ceros sobre el círculo unitario en ±60 Hz, acompañados de polos próximos en el interior, esto define la profundidad y el ancho de la muesca y garantiza la estabilidad del filtro.
 
-  <center><img src="EMG_Butter_60.png" width="450" height="200"/></center>
+  <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F60_EMG/EMG_Butter_60.png?raw=true" width="450" height="200"/></center>
   <center>Figura 5: Filtro Butterworth IRR rechazabanda de 60 Hz. [Elaboración propia]</center>
   
   <p align="justify">El filtro Chebyshev tipo I diseñado en configuración notch (60 Hz) muestra una atenuación selectiva y profunda en la frecuencia central de 60 Hz, preservando la ganancia en las demás bandas del espectro. La respuesta en magnitud evidencia una caída abrupta en torno a la frecuencia de rechazo,mientras que la fase presenta un comportamiento no lineal, con cambios bruscos en las cercanías del notch. La gráfica de retardo de grupo confirma este fenómeno al mostrar un pico pronunciado alrededor de 60 Hz, lo que indica distorsión temporal localizada en la banda de rechazo. En el plano polos/ceros se observan pares de ceros ubicados sobre el círculo unitario en la región correspondiente a 60 Hz. 
 
-  <center><img src="EMG_C1_60.png" width="450" height="200"/></center>
+  <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F60_EMG/EMG_C1_60.png?raw=true width="450" height="200"/></center>
   <center>Figura 6: Filtro Chebyshev I rechazabanda de 60 Hz. [Elaboración propia]</center>
 
   <p align="justify">En el caso de Chebyshev II, la respuesta en magnitud muestra un rechazo muy pronunciado y angosto centrado exactamente en 60Hz con una atenuación superior  60dB. La respuesta en fase presenta discontinuidad abrupta en la vecindad de la frecuencia de rechazo, no lineal. En el retardo en grupo, observar un pico elevando al redero de 60 Hz. En el diagrama de polos y ceros, se confirma la topología del notch, pues los ceros se ubican en el círculo unitario y en el ángulo que corresponde a 60Hz. 
 
-  <center><img src="EMG_C2_60.png" width="450" height="200"/></center>
+  <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F60_EMG/EMG_C2_60.png?raw=true width="450" height="200"/></center>
   <center>Figura 7: Filtro Chebyshev II rechazabanda de 60 Hz. [Elaboración propia]</center>
 
   <p align="justify">En el caso del filtro notch de 60 Hz con ventana de Hamming (FIR), la respuesta en magnitud presenta una atenuación localizada y pronunciando en todo a 60Hz, La que resulta en fase se mantiene linea en el rango de frecuencias (coherente con los filtro FIR), A su vez, el retardo de futuro es constante y elevando (460 ms), característica de FIR de orden alto, En el adra de polos y ceros se muestra un anillo denso de ceros disturbio en casi la totalidad del círculo unitario, reflejo de alto orden (N=921). 
 
-  <center><img src="EMG_H_60.png" width="450" height="200"/></center>
+  <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%206%20-%20Filtros/Extras/F60_EMG/EMG_H_60.png?raw=true width="450" height="200"/></center>
   <center>Figura 8: Filtro Hamming FIR rechazabanda de 60 Hz. [Elaboración propia]</center>
 
 
@@ -150,20 +150,20 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
   
   <p align="justify">Así pues, empezando con un filtro Butterworth observamos una respuesta en magnitud bastante agradable pues permite que las frecuencias de interés pasen normalmente  y atenúa en gran medida frecuencias indeseadas como artefactos o notch, sin embargo si bien la frecuencia de corte está en 40 Hz, la señal comienza a atenuarse en valores anteriores, aunque esto puede resolverse moviendo la frecuencia de corte hasta obtener una mejor banda de paso. A su vez, observamos una fase
 
-  ![alt text](image.png)
+  
   <center>Figura 9: Filtro Butterworth IRR pasabanda de 0.5-40 Hz. [Elaboración propia]</center>
   
   
 
-  ![alt text](image-1.png)
+  
   <center>Figura 10: Filtro Chebyshev I pasabanda de 0.5-40 Hz. [Elaboración propia]</center>
   <p align="justify">
 
-  ![alt text](image-2.png)
+ 
   <center>Figura 11: Filtro Chebyshev II pasabanda de 0.5-55 Hz. [Elaboración propia]</center>
   <p align="justify">
 
-  ![alt text](image-3.png)
+  
   <center>Figura 12: Filtro Hamming FIR pasabanda de 60 Hz. [Elaboración propia] [Elaboración propia]</center>
   <p align="justify">
   
@@ -175,10 +175,10 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 
   | Filtro | Movimiento libre | Movimiento en contra |
   |--------|------------------|----------------------|
-  | **Butterworth** | ![image](EMG_Butter_20.png) | ![image](EMG_Butter_60.png) |
-  | **Chebyshev 1** | ![image](EMG_C1_20.png) | ![image](EMG_C1_60.png) |
-  | **Chebyshev 2** | ![image](EMG_C2_20.png) | ![image](EMG_C2_60.png) |
-  | **Hamming** | ![image](EMG_H_20.png) | ![image](EMG_H_60.png) |
+  | **Butterworth** | ![alt text](image-32.png) | ![alt text](image-36.png) |
+  | **Chebyshev 1** | ![alt text](image-33.png) | ![alt text](image-37.png) |
+  | **Chebyshev 2** | ![alt text](image-34.png) | ![alt text](image-38.png) |
+  | **Hamming** | ![alt text](image-35.png) | ![alt text](image-39.png) |
   <center>Tabla 7: Tabla comparativa de filtros en señales EMG. [Elaboración propia]</center>
 
 - **Señales ECG**
