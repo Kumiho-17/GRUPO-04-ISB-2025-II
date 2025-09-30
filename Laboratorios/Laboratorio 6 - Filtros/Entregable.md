@@ -91,10 +91,10 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 ##### 4.2.1. Filtros para 0.5-40 Hz
 | Filtro | Parámetros | Respuesta de frecuencia | Retraso de grupo | Diagrama polos y ceros |
 |--------|------------|-------------------------|------------------|------------------------|
-| **Butterworth** |  | |  ||
-| **Chebyshev 1** |  |  |  | |
-| **Chebyshev 2** |  |  |  |  |
-| **Hamming** | |  |  |  |
+| **Butterworth** | ![alt text](image-48.png) | ![alt text](image-49.png)| ![alt text](image-50.png) |![alt text](image-51.png)|
+| **Chebyshev 1** | ![alt text](image-52.png) | ![alt text](image-53.png) | ![alt text](image-54.png) | ![alt text](image-55.png)|
+| **Chebyshev 2** | ![alt text](image-56.png) |![alt text](image-57.png)  | ![alt text](image-58.png) | ![alt text](image-59.png) |
+| **Hamming** | ![alt text](image-60.png)|  ![alt text](image-62.png)| ![alt text](image-63.png) | ![alt text](image-64.png) |
 <center>Tabla 5: Filtros para 0.5-[40-50] Hz [Elaboración propia]</center>
 
 
@@ -186,10 +186,10 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 
   | Filtro | Reposo | Actividad física |
   |--------|------------------|----------------------|
-  | **Butterworth** | ![alt text](image-4.png) |![alt text](image-5.png) |
-  | **Chebyshev 1** | ![alt text](image-6.png) | ![alt text](image-7.png) |
-  | **Chebyshev 2** | ![alt text](image-8.png) | ![alt text](image-9.png) |
-  | **Hamming** | ![alt text](image-10.png)|![alt text](image-11.png)
+  | **Butterworth** | ![alt text](image-40.png) |![alt text](image-41.png) |
+  | **Chebyshev 1** | ![alt text](image-42.png) | ![alt text](image-43.png) |
+  | **Chebyshev 2** |  ![alt text](image-44.png)|![alt text](image-45.png)  |
+  | **Hamming** |![alt text](image-46.png) |![alt text](image-47.png)
   <center>Tabla 8: Tabla comparativa de filtros en señales ECG. [Elaboración propia]</center>
 
 ### :memo:7. Conclusiones
