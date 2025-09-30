@@ -148,23 +148,23 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
   
   <p align="justify">En primer lugar, es importante resaltar que la frecuencia usual a la que se suelen encontrar las señales de ECG está entre 0.5 Hz a 40 Hz, pues valores por debajo del rango pertenecen a artefactos que molestan la señal y valores por encima pueden corresponder a otro tipo de señales o a ruido eléctrico a 60 Hz, por lo que a diferencia de otras señales debería bastar con un solo filtro pasabanda para poder atenuar frecuencias externas de gran molestia, pues tampoco hace falta de un filtro que cubra el notch al no encontrarse su frecuencia en la banda de paso.
   
-  <p align="justify">Así pues, empezando con un filtro Butterworth observamos una respuesta en magnitud bastante agradable pues permite que las frecuencias de interés pasen normalmente  y atenúa en gran medida frecuencias indeseadas como artefactos o notch, sin embargo si bien la frecuencia de corte está en 40 Hz, la señal comienza a atenuarse en valores anteriores, aunque esto puede resolverse moviendo la frecuencia de corte hasta obtener una mejor banda de paso. A su vez, observamos una fase
+  <p align="justify">Así pues, empezando con un filtro Butterworth observamos una respuesta en magnitud bastante agradable pues permite que las frecuencias de interés pasen normalmente  y atenúa en gran medida frecuencias indeseadas como artefactos o notch, sin embargo si bien la frecuencia de corte está en 40 Hz, la señal comienza a atenuarse en valores anteriores, aunque esto puede resolverse moviendo la frecuencia de corte hasta obtener una mejor banda de paso. A su vez, observamos una fase que se comporta de manera ligeramente estable exceptuando los extremos del gráfico. Además, mediante la gráfica de polos y zeros determinamos que el sistema es estable pues estos valores se encuentran dentro o en las cercanías del cículo unitario, además de reflejar su naturaleza pasabanda mediante la ubicación de los polos en el lado izquierdo y derecho.
 
-  
+  ![alt text](image-40.png)
   <center>Figura 9: Filtro Butterworth IRR pasabanda de 0.5-40 Hz. [Elaboración propia]</center>
   
-  
+  <p align="justify">Por otro lado, el tipo de filtro Chebyshev I también revela una atenuación bastante aceptable de frecuencias indeseadas mediante su respuesta en magnitud, sin embargo presenta un ligero rizado en la banda de paso que podría afectar la señal, aunque no en gran medida teniendo en cuenta la ganancia en dB. Por otro lado, la fase no es tan estable, pues presenta pendientes en la gráfica y en ciertos lugares se comporta de manera no lineal. Finalmente, el análisis de polos y zeros indica la estabilidad del sistema, pues ell mismo es estable al tener tanto polos y zeros dentro del circulo así se encuentren en la frontera del círculo unitario.
 
-  
-  <center>Figura 10: Filtro Chebyshev I pasabanda de 0.5-40 Hz. [Elaboración propia]</center>
-  <p align="justify">
+  ![alt text](image-42.png)
+  <center>Figura 10: Filtro Chebyshev I pasabanda de 0.5-55 Hz. [Elaboración propia]</center>
+  <p align="justify">A diferencia del filtro Chebysehv tipo I, el tipo II presenta la banda de paso con un comportamiento lineal, pero la banda de atenuación contiene un rizado característico que en este caso alcanza los -60 dB, cosa que si bien sigue tratándose de una gran atenuación, debe ser una característica a tomar en consideración. Además, en este caso se delimita una frecuencia de corte un poco más alta para lograr que los valores cercanos a 40 Hz no sean atenuados en la respuesta en magnitud y así no se pierda información de la señal deseada. Por otro lado, esta banda de paso es bastante lineal y refleja ser de utilidad respecto a la ganancia. Sin embargo, la fase indica un comportamiento bastante variable, pues toda la misma es muy cambiante y no presenta un comportamiento lineal. Finalmente, el análisis de polos y zeros si indica la estabilidad del sistema al ubicar estos elementos dentro o en la frontera del circulo unitario.
 
- 
+ ![alt text](image-44.png)
   <center>Figura 11: Filtro Chebyshev II pasabanda de 0.5-55 Hz. [Elaboración propia]</center>
-  <p align="justify">
+  <p align="justify">Finalmente, el último tipo de filtro aplicado fue de naturaleza FIR de tipo Hamming tomado como ventana ubicando una frecuencia de corte en 42 Hz y teniendo un orden 100, pues en este caso influye en gran medida el orden para tener una mejor atenuación fuera de la banda de paso y obtener un filtro más selectivo. Así pues, el espectro de respuesta en magnitud indica una banda de paso limpia hasta los 40 Hz y posteriormente una atenuación bastante marcada hasta llegar a una banda de rizado que alcanza como máximo los -60 dB, no influyendo en gran medida, pues aún así se logra el objetivo de filtrar frecuencias indeseadas, por otro lado la fase denota un comportamiento lineal durante toda la banda de paso y posteriormente un sube y baja dentro de la banda de atenuación dando algo de estabilidad al sistema. Finalmente el análisis de polos y zeros indica estabilidad para el filtro pues no se observan estos elementos fuera del círculo unitario.
 
-  
-  <center>Figura 12: Filtro Hamming FIR pasabanda de 60 Hz. [Elaboración propia] [Elaboración propia]</center>
+  ![alt text](image-46.png)
+  <center>Figura 12: Filtro Hamming FIR pasabanda de 42 Hz. [Elaboración propia] [Elaboración propia]</center>
   <p align="justify">
   
 
@@ -172,6 +172,8 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 ### :bookmark_tabs:6. Discusión
 - **Señales EMG**
   <p align="justify">En ambos registros la señal “sin DC” (azul) ya llega bastante “limpia” y el pasabanda 20–450 Hz (naranja) modifica poco la envolvente temporal: en reposo (0–5.5 s) se mantienen oscilaciones pequeñas y, durante la contracción (6–10 s), la amplitud pico-a-pico visible sigue del orden de ±2 mV en la toma “en contra” y ±0.6…0.8 mV en la toma “libre”, con cambios leves de aspereza/ruido fino pero sin distorsiones evidentes de la envolvente. Esto es esperable porque el módulo EMG de BITalino ya limita por hardware el ancho de banda aproximadamente a 25–480 Hz, de modo que gran parte de lo que elimina un pasabanda 20–450 Hz ya venía atenuado desde la adquisición; por eso el impacto visual en el dominio del tiempo es pequeño [11]. Al añadir el notch de 60 Hz (curva verde) tampoco cambia la envolvente ni el pico-a-pico de forma apreciable (siguen en los mismos rangos que se observan en las primeras gráficas), pero sí se reduce el zumbido estrecho de red; ese beneficio se nota sobre todo en el espectro, no tanto en la forma de onda, ante esto la literatura recomienda explícitamente filtrar la interferencia de red en sEMG, y usar un segundo notch en 120 Hz si se ve la segunda armónica [10], [12]. Entre familias de filtros, Butterworth entrega la traza más “suave”; Chebyshev I y II conservan la misma envolvente global pero muestran una textura ligeramente más rugosa en los picos (consistente con su rizado en banda); y el FIR Hamming produce una señal tan estable como la de Butterworth—en tus gráficas todas quedan alineadas porque aplicaste filtfilt (fase cero), y la única diferencia práctica es que el FIR con muchos taps tarda más en calcularse (se nota en ejecución) pero no empeora la forma de onda. 
+
+
 
   | Filtro | Movimiento libre | Movimiento en contra |
   |--------|------------------|----------------------|
@@ -182,7 +184,7 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
   <center>Tabla 7: Tabla comparativa de filtros en señales EMG. [Elaboración propia]</center>
 
 - **Señales ECG**
-  <p align="justify">En ambos 
+  <p align="justify">Tal como se indico, solo hace falta analizar un filtro pasabanda exceptuando un filtro para atenuar un notch, pues con el filtro propio para un ECG ya se atenúa este valor, pues si bien el rango de ECG está calificado entre 0.5 Hz y 150 Hz aproximadamente[13], las señales suelen rondar como  máximo hasta los 40 Hz [14]. Así pues, mediante las gráficas halladas para las señales de EMG tomadas con filtro y sin filtro, no se llega a observar gran diferencia, pues si bien se observa una presencia relativamente más nítida en la señal de ECG filtrada, esta sigue pareciéndose bastante a la señal original, de tal manera que se puede decir que el ruido, artefactos y presencia de otro tipo de alteradores de señal fue mínimo, pues la señal no tiene tanta necesidad de ser filtrada. Sin embargo, si se tiene la necesidad de usar algún filtro para tener una calidad de señal mucho mayor, los filtros que revelan tener una eficacia ligeramente mayor serían el filtro Butterworth y el filtro Hamming, al conseguir una señal un poco más limpia en comparación a Chebyshev, además de tener una mejor respuesta en magnitud evitando un rizado en la banda de paso y consiguiendo una pendiente de atenuación más pronunciada. 
 
   | Filtro | Reposo | Actividad física |
   |--------|------------------|----------------------|
@@ -194,7 +196,7 @@ En este contexto, este laboratorio presenta el diseño e implementación de filt
 
 ### :memo:7. Conclusiones
 <p align="justify">
-Comparando los diferentes diseños de filtros aplicados a señales EMG, se observa que todo complementa con la función de preservar la actividad neuromuscular dentro el rango fisiológico (20 - 450 Hz) y atenuar la interferencia de la señal a 60 Hz.  Sin embargo, las diferencias entre ellos permiten identificar cuál es el más adecuado. Los filtro IIR, ofrecen atenuaciones más marcadas con makro número de coeficientes, siendo más eficiente computacionalmente hablando. Entre ellos el Butterworth destaca por su respuesta suave y estable, su rizado en la banda pasante. Por su parte los filtros Chebyshev I y II, aunque efectivos, introducen ondulaciones que generan mayor rugosidad en la señal ya filtrada y pueden resultar ser indeseables o generar confusión. Por su parte el litro FIR conv etna Hamming proporciona una respuesta lineal en fase(asegura mínima distorsión temporal), por a costa de un mayor orden y tiempo de cómputo elevado a comparación de los filtros IIR. Considerando la estabilidad, la preservación de la morfología de la señal y la eficiencia computacional, el filtro Butterworth combinado con un notch de 60 Hz se presenta como la opción más equilibrada y adecuada para el procesamiento de EMG en condiciones experimentales con hardware como el BITalino.
+Comparando los diferentes diseños de filtros aplicados a señales EMG, se observa que todo complementa con la función de preservar la actividad neuromuscular dentro el rango fisiológico (20 - 450 Hz) y atenuar la interferencia de la señal a 60 Hz.  Sin embargo, las diferencias entre ellos permiten identificar cuál es el más adecuado. Los filtro IIR, ofrecen atenuaciones más marcadas con makro número de coeficientes, siendo más eficiente computacionalmente hablando. Entre ellos el Butterworth destaca por su respuesta suave y estable, su rizado en la banda pasante. Por su parte los filtros Chebyshev I y II, aunque efectivos, introducen ondulaciones que generan mayor rugosidad en la señal ya filtrada y pueden resultar ser indeseables o generar confusión. Por su parte el litro FIR conv etna Hamming proporciona una respuesta lineal en fase(asegura mínima distorsión temporal), por a costa de un mayor orden y tiempo de cómputo elevado a comparación de los filtros IIR. Considerando la estabilidad, la preservación de la morfología de la señal y la eficiencia computacional, el filtro Butterworth combinado con un notch de 60 Hz se presenta como la opción más equilibrada y adecuada para el procesamiento de EMG en condiciones experimentales con hardware como el BITalino. A su vez, para una señal ECG se observó que los filtros Hamming y Butterworth son ligeramente más efectivos al presentar una mejor respuesta en frecuencia dentro del rango de 0.5 a 42 Hz (rango de mayor importancia para una señal ECG), de manera que se evitan problemas referidos a artefactos, ruido de aparatos o notch.
 
 
 ### :notebook:Referencias
@@ -232,7 +234,13 @@ Comparando los diferentes diseños de filtros aplicados a señales EMG, se obser
 11. PLUX – Wireless Biosignals, S.A., Electromyography (EMG) Sensor Data Sheet EMG 100716, Rev. A, Lisboa, Portugal, 2016. [Online]. Available: http://bitalino.com/
 
 <p align="justify">
-12. S. Muceli and R. Merletti, “Frequency analysis of the surface EMG signal: Best practices,” J. Electromyogr. Kinesiol., vol. 79, p. 102937, 2024. doi: 10.1016/j.jelekin.2024.102937.  
+12. S. Muceli and R. Merletti, “Frequency analysis of the surface EMG signal: Best practices,” J. Electromyogr. Kinesiol., vol. 79, p. 102937, 2024. doi: 10.1016/j.jelekin.2024.102937. 
+
+<p align="justify">
+13. F. Buendía-Fuentes, M. A. Arnau-Vives, A. Arnau-Vives, Y. Jiménez-Jiménez, J. Rueda-Soriano, E. Zorio-Grima, A. Osa-Sáez, L. V. Martínez-Dolz, L. Almenar-Bonet y M. A. Palencia-Pérez, “High-Bandpass Filters in Electrocardiography: Source of Error in the Interpretation of the ST Segment,” ISRN Cardiol., vol. 2012, Article ID 706217, 10 pp., 2012, doi: 10.5402/2012/706217.
+
+<p align="justify">
+14. J. E. González-Barajas, “Implementación de filtro digital en tiempo real para señal de onda R,” Revista Colombiana de Ingeniería, vol. XX, no. X, pp. XX–XX, 2015. [En línea]. Disponible: http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0123-77992015000100007
 
 ### :raised_hand:Participación
 - Eduardo Poma: 33.33%
