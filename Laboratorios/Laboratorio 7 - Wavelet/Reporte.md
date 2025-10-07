@@ -107,13 +107,13 @@ Es así que en la siguiente tabla se encuentran parámetros tomando en cuenta la
 #### 5.1. Señales EMG filtradas
 <p align="justify">La señal EMG fue filtrada mediante DWT con la familia Coiflet4 (nivel 4) y umbralado suave según se sigue en la literatura e investigaciones previamente realizadas. Así, se observaron los siguientes gráficos referidos a la señal cruda, filtrada y parámetros para la evaluación del filtro.  
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/EMG_1.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/EMG_1.png?raw=true/></center>
 <center>Figura 1: Señal EMG original vs filtrada con coiflet 4. [Elaboración propia]</center>
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/EMG_r.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/EMG_r.png?raw=true/></center>
 <center>Figura 2: Espectro antes vs despues del filtro. [Elaboración propia]</center>
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/EMG_e.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/EMG_e.png?raw=true/></center>
 <center>Figura 3: Envolvente RMS para la señal filtrada. [Elaboración propia]</center>
 
 <p align="justify">En las métricas, observadas se obtiene un filtrado relativamente efectivo en la figura 1, pues el cambio entre señal filtrada y no filtrada es ligero, sin embargo si es posible observar una mejora relativa en cuanto a atenuación lugares que parecen tener frecuencias más altas de lo debido. Así pues, esto se justifica mediante la figura 2, en la que se observa cómo el corte de frecuencias comienza aproximadamente por los 150 Hz al ver la atenuación entre la señal filtrada y no filtrada. Finalmente, en el caso de EMG, la gráfica envolvente de RMS permite determinar la efectividad del filtrado, por lo que mediante la figura 3 identificamos una RMS coherente con la señal filtrada durante el accionar de la señal que mediante literatura los valores cercanos a 0.75 y 1 permiten observar si el filtrado ha sido bueno.
@@ -121,13 +121,13 @@ Es así que en la siguiente tabla se encuentran parámetros tomando en cuenta la
 #### 5.2. Señales ECG filtradas
 <p align="justify">La señal ECG fue filtrada mediante DWT con Daubechies-6 (nivel 4) y umbralado suave (VisuShrink). La reconstrucción por IDWT preservó la morfología del complejo P–QRS–T, como se observa en la superposición original vs. filtrada (Fig. 4). La PSD de 0 a 100 Hz (Fig. 5) evidencia atenuación consistente de componentes de alta frecuencia (≥40 Hz), manteniendo la banda útil del ECG. El residual (Fig. 6) es de media cercana a cero, dominado por contenido rápido, lo que sugiere que el filtro removió principalmente ruido (EMG/alta frecuencia) y no algún componente fisiológico.
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/ECG_1.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/ECG_1.png?raw=true/></center>
 <center>Figura 4: Señal ECG original vs filtrada con Daubechies-6. [Elaboración propia]</center>
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/ECG_e.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/ECG_e.png?raw=true/></center>
 <center>Figura 5: Espectro antes vs despues del filtro. [Elaboración propia]</center>
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/ECG_r.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/ECG_r.png?raw=true/></center>
 <center>Figura 6: Residual = Señal original - Filtrada. [Elaboración propia]</center>
 
 <p align="justify">En las métricas, el filtrado incrementó la SNR de -8.23 dB a 28.87 dB, con una ganancia de +37.10dB lo que indica una gran reducción del ruido. La distorsión relativa fue baja (PDR = 3.59%) y el error cuadrático medio fue de RMSE = 8uV, que es coherente con una mínima alteración de la señal. La corrección entre la señal original y la filtrada fue de 0.999, esto confirma la alta fidelidad de la reconstrucción. En términos de preservación clinica, la frecuencia cardiaca permaneció inalterada (la diferencia ente HR antes y después del filtro fue de 0.0 bpm) y la amplitud pico-pico QRS objetivo tuvo una reducción de 0.98%, esto respalda el hecho que la morfología esencial se logró conservar. 
@@ -135,13 +135,13 @@ Es así que en la siguiente tabla se encuentran parámetros tomando en cuenta la
 #### 5.3. Señales EEG filtradas
 <p align="justify">La señal EEG fue filtrada mediante DWT con Biorthogonal (nivel 5). La reconstrucción por IDWT preservó la morfología general del trazado electroencefalográfico, como se observa en la superposición original vs. filtrada (Fig. 7). La PSD de 0 a 100 Hz (Fig. 8) evidencia atenuación consistente de componentes de alta frecuencia (≥80 Hz), manteniendo la banda útil del EEG. El residual (Fig. 9) es de media cercana a cero, lo que sugiere que el filtro removió principalmente ruido (parpadeos/EMG) y no algún componente fisiológico.
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/EEG_1.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/EEG_1.png?raw=true/></center>
 <center>Figura 7: Señal ECG original vs filtrada con Biorthogonal. [Elaboración propia]</center>
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/EEG_e.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/EEG_e.png?raw=true/></center>
 <center>Figura 8: Espectro antes vs despues del filtro. [Elaboración propia]</center>
 
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207/Images/EEG_r.png?raw=true/></center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%207%20-%20Wavelet/Images/EEG_r.png?raw=true/></center>
 <center>Figura 9: Residual = Señal original - Filtrada. [Elaboración propia]</center>
   
 <p align="justify">En las métricas, el filtrado incrementó la SNR de -3.62 dB a 18.23 dB, con una ganancia de +21.86 dB lo que indica una reducción del ruido. La distorsión relativa fue baja (PDR = 11.70%) y el error cuadrático medio fue de RMSE = 0.0205 mV, que es coherente con una mínima alteración de la señal. La corrección entre la señal original y la filtrada fue de 0.994, esto confirma la alta fidelidad de la reconstrucción.
