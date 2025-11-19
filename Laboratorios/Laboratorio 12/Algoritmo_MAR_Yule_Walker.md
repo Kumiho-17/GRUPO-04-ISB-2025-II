@@ -12,6 +12,9 @@
 <p align="justify">
 Un modelo autorregresivo (AR) es un tipo de modelo de series temporales donde la variable de interés depende linealmente de sus observaciones pasadas, es decir, el valor actual está determinado por una combinación de los valores anteriores y un término de error o ruido blanco. El modelo AR(p) se define como:
 
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Images/paper1.png?raw=true"/></center>
+<center>Figura 1:  Definición de ecuación []</center>
+
 donde:
 - X es el valor de la serie en el tiempo ttt,
 - φi son los coeficientes autorregresivos,
@@ -34,7 +37,7 @@ El método Yule-Walker se usa para estimación de coeficientes AR a partir de la
 ### :pushpin:2. Papers
 #### 2.1. Detección del Pico R en Señales ECG Usando Yule-Walker y Análisis de Componentes Principales
 <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Images/paper1.png?raw=true"/></center>
-<center>Figura 1: Título del paper 1 []</center>
+<center>Figura 1: Título del paper 1 [3]]</center>
 
 ##### 2.1.1 Introducción 
 El Electrocardiograma (ECG) es una herramienta fundamental en la medicina para la evaluación de la salud cardíaca. La detección características importantes, como el pico R, es crucial para el diagnóstico temprano de arritmias cardíacas y otros problemas del corazón. Dicho lo anterior, el artículo de Gupta y Mittal (2019) propone un enfoque combinado utilizando el modelo autoregresivo (AR) Yule-Walker y Análisis de Componentes Principales (PCA) para mejorar la detección del pico R en señales ECG [1].
@@ -72,6 +75,9 @@ El modelo autoregresivo (AR) Yule-Walker es utilizado para extraer característi
 ###### 2.1.3.4 Funcionamiento del Modelo AR (Yule-Walker)
 Un modelo AR de orden 𝑝 describe la señal Xt como una combinación lineal de sus valores pasados, más un término de error (ruido blanco):
 
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Images/p2.jpeg?raw=truee"/></center>
+<center>Figura 2:  Ecuación de definición de modelo [3]</center>
+
 Donde:
 - Xt es el valor de la señal en el tiempo t
 - φi​ son los coeficientes autorregresivos
@@ -79,6 +85,9 @@ Donde:
 
 
 Para estimar los coeficientes φi, se utilizan las ecuaciones de Yule-Walker, que están basadas en la autocovarianza de la señal:
+
+<center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Images/p1.jpeg?raw=true"/></center>
+<center>Figura 3:  Ecuación de Yule-Walker [3]</center>
 
 
 Donde γm​ es la autocovarianza en el retardo mmm. Las ecuaciones de Yule-Walker permiten resolver los coeficientes φi​ a partir de los valores de autocovarianza [1].
@@ -180,6 +189,10 @@ Si bien los modelos autorregresivos tradicionales ofrecen una herramienta simple
 ##### 2.2.6 Conclusiones
 
 Combinar el modelo autorregresivo con técnicas de kernel machines permite modelar de forma más precisa la evolución de señales ECG al capturar sus características no lineales, especialmente en zonas complejas como el QRS, donde el AR lineal falla. Al aplicar las ecuaciones de Yule-Walker, el método logra errores menores a comparación con el AR tradicional. Los resultados con señales reales del MIT-BIH confirman que esta aproximación ofrece una representación fiel a la dinámica cardíaca y una base sólida para futuras extensiones hacia modelos ARMA o ARIMA basados en kernels [2].
+
+### 3 Github en el que se aplicó la técnica
+#### Repositorio: https://github.com/hturbe/ECG_MAR_Model
+La base de datos utilizada pertenece a: Denoised ECGs from The PhysioNet/Computing in Cardiology Challenge 2020 encontrada en: https://zenodo.org/records/6362422#.YjM4PnrMJGM
 
 ### :notebook:Referencias
 <p align="justify">
