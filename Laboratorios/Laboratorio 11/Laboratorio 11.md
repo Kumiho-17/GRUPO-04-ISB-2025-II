@@ -187,7 +187,7 @@ Utilizando los índices de picos R detectados, se calcularon:
 
 ## 6.1. Visualización inicial de la señal ECG
 
-![]([[images/ecg_signal.png](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%2011/Imagenes/Figura1.png)](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/e090b8bc9ffce9959ac0d6887d0a896506c7f194/Laboratorios/Laboratorio%2011/Imagenes/Figura1.png))
+![Figura 1. Señal ECG correspondiente a un episodio de SVTA (fila 0)]([[images/ecg_signal.png](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Laboratorios/Laboratorio%2011/Imagenes/Figura1.png)](https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/e090b8bc9ffce9959ac0d6887d0a896506c7f194/Laboratorios/Laboratorio%2011/Imagenes/Figura1.png))
 
 **Figura 1. Señal ECG correspondiente a un episodio de SVTA (fila 0)**  
 
@@ -302,5 +302,6 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
