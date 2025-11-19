@@ -260,6 +260,7 @@ Este análisis detallado confirma la correcta delineación P–QRS–T y resalta
 ## 6.7. Frecuencia cardíaca instantánea (HR)
 
 ![Descripción de la imagen](Imagenes/Figura8.png)
+
 **Figura 7. Frecuencia cardíaca instantánea calculada a partir de los intervalos RR — SVTA (fila 0)**  
 
 La Figura 7 muestra la frecuencia cardíaca instantánea obtenida a partir de los intervalos RR detectados en la señal ECG. Los valores iniciales se encuentran notablemente elevados, con picos entre 150 y 162 bpm, lo cual es característico de la taquicardia supraventricular, cuyo rango típico puede superar los 140 bpm según lo reportado en la literatura [3].
@@ -307,6 +308,7 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
 
