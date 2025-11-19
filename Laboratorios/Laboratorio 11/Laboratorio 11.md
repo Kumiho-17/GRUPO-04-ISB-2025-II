@@ -85,14 +85,14 @@ Para el desarrollo del presente laboratorio se emplearon herramientas de softwar
 
 | **Material / Software** | **Imagen** |
 |--------------------------|------------|
-| Python 3.12              | *(pendiente)* |
-| Jupyter Notebook         | *(pendiente)* |
-| neurokit2                | *(pendiente)* |
-| numpy                    | *(pendiente)* |
-| scipy                    | *(pendiente)* |
-| matplotlib               | *(pendiente)* |
-| pickle                   | *(pendiente)* |
-| tqdm                     | *(pendiente)* |
+| Python 3.12              | ![Descripción de la imagen](Imagenes/Python.png)|
+| Jupyter Notebook         | ![Descripción de la imagen](Imagenes/jupyter.png) |
+| neurokit2                | ![Descripción de la imagen](Imagenes/neurokit.png) |
+| numpy                    | ![Descripción de la imagen](Imagenes/Numpy.png) |
+| scipy                    | ![Descripción de la imagen](Imagenes/scypi.png) |
+| matplotlib               | ![Descripción de la imagen](Imagenes/Matplotlib.png) |
+| pickle                   | ![Descripción de la imagen](Imagenes/pickle.png) |
+| tqdm                     | ![Descripción de la imagen](Imagenes/tqdm.png) |
 
 
 ## 4.2. Dataset empleado
@@ -308,6 +308,7 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
 
