@@ -198,6 +198,7 @@ Este gráfico permite identificar preliminarmente el patrón rítmico general de
 
 ## 6.2. Detección del complejo QRS (picos R)
 
+![Descripción de la imagen](Imagenes/Figura2.png)
 **Figura 2. Detección automática de los picos R del complejo QRS en la señal SVTA (fila 0)**  
 
 En la Figura 2 se presenta el resultado del algoritmo de delineación aplicado a la señal ECG, donde los picos R han sido identificados y marcados con puntos rojos. Se observa una detección consistente a lo largo de todo el fragmento, lo cual confirma que el algoritmo reconoce adecuadamente los complejos QRS incluso bajo las condiciones de frecuencia elevada presentes en la taquicardia supraventricular.
@@ -208,6 +209,7 @@ Este resultado constituye la base para el cálculo de los intervalos RR y la fre
 
 ## 6.3. Detección de la onda P
 
+![Descripción de la imagen](Imagenes/Figura3.png)
 **Figura 3. Detección automática de ondas P en la señal ECG — SVTA (fila 0)**  
 
 En la Figura 3 se muestran las ondas P detectadas a lo largo del registro, marcadas con triángulos amarillos. Estas detecciones corresponden a la despolarización auricular y se observan principalmente en la porción basal de la señal, por delante del complejo QRS. Debido a la elevada frecuencia cardíaca característica de la taquicardia supraventricular, la onda P presenta amplitud reducida y en algunos ciclos se encuentra parcialmente superpuesta o cercana al complejo QRS, lo que dificulta su identificación visual.
@@ -218,6 +220,7 @@ La correcta detección de la onda P es especialmente relevante en episodios de S
 
 ## 6.4. Detección de la onda T
 
+![Descripción de la imagen](Imagenes/Figura4.png)
 **Figura 4. Detección automática de ondas T en la señal ECG — SVTA (fila 0)**  
 
 En la Figura 4 se presentan las ondas T identificadas por el algoritmo de delineación, marcadas con cuadrados verdes. Estas detecciones corresponden al proceso de repolarización ventricular y, como es habitual, aparecen después del complejo QRS. La morfología observada muestra ondas T de amplitud moderada y formas relativamente uniformes a lo largo del registro, lo que refleja una repolarización ventricular conservada.
@@ -229,6 +232,7 @@ La correcta identificación de la onda T es esencial para analizar la dinámica 
 
 ## 6.5. Detección conjunta de ondas P, QRS y T
 
+![Descripción de la imagen](Imagenes/Figura5.png)
 **Figura 5. Detección simultánea de ondas P, QRS (picos R) y T en la señal SVTA (fila 0)**  
 
 En la Figura 5 se presenta la delineación completa del ciclo cardíaco, mostrando simultáneamente los tres componentes principales del ECG: la onda P (triángulos amarillos), el complejo QRS (picos R en rojo) y la onda T (cuadrados verdes). Esta visualización integrada permite apreciar la secuencia fisiológica completa de despolarización auricular, despolarización ventricular y repolarización ventricular a lo largo del registro.
@@ -239,6 +243,7 @@ Esta representación conjunta sintetiza el comportamiento eléctrico del corazó
 
 ## 6.6. Zoom en un ciclo cardíaco
 
+![Descripción de la imagen](Imagenes/Figura6.png)
 **Figura 6. Zoom en un latido mostrando ondas P, QRS y T — SVTA (fila 0)**  
 
 La Figura 6 muestra un acercamiento a un ciclo cardíaco completo con el fin de analizar en detalle la morfología de las ondas P, QRS y T. Este zoom permite identificar con mayor claridad la secuencia de activación auricular y ventricular, así como evaluar la precisión de la detección automática realizada por los algoritmos.
@@ -254,6 +259,7 @@ Este análisis detallado confirma la correcta delineación P–QRS–T y resalta
 
 ## 6.7. Frecuencia cardíaca instantánea (HR)
 
+![Descripción de la imagen](Imagenes/Figura8.png)
 **Figura 7. Frecuencia cardíaca instantánea calculada a partir de los intervalos RR — SVTA (fila 0)**  
 
 La Figura 7 muestra la frecuencia cardíaca instantánea obtenida a partir de los intervalos RR detectados en la señal ECG. Los valores iniciales se encuentran notablemente elevados, con picos entre 150 y 162 bpm, lo cual es característico de la taquicardia supraventricular, cuyo rango típico puede superar los 140 bpm según lo reportado en la literatura [3].
@@ -301,6 +307,7 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
 
