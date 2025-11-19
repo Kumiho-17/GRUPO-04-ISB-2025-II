@@ -85,7 +85,7 @@ Para el desarrollo del presente laboratorio se emplearon herramientas de softwar
 
 | **Material / Software** | **Imagen** |
 |--------------------------|------------|
-| Python 3.12              | ![Descripción de la imagen](Imagenes/Python.png)|
+| Python 3.12              | ![Descripción de la imagen](Imagenes/python.png)|
 | Jupyter Notebook         | ![Descripción de la imagen](Imagenes/jupyter.png) |
 | neurokit2                | ![Descripción de la imagen](Imagenes/neurokit.png) |
 | numpy                    | ![Descripción de la imagen](Imagenes/Numpy.png) |
@@ -308,6 +308,7 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
 
