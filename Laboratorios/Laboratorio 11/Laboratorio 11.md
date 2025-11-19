@@ -187,8 +187,7 @@ Utilizando los índices de picos R detectados, se calcularon:
 
 ## 6.1. Visualización inicial de la señal ECG
 
-![Figura 1. Señal ECG correspondiente a un episodio de SVTA (fila 0)](Laboratorios/Laboratorio 11/Imagenes/Figura1.png)
-
+![Descripción de la imagen](Imagenes/Figura1.png)
 **Figura 1. Señal ECG correspondiente a un episodio de SVTA (fila 0)**  
 
 En la Figura 1 se observa el fragmento de señal ECG seleccionado del dataset, clasificado como un episodio de taquicardia supraventricular (SVTA). La señal presenta una morfología característica, con complejos QRS estrechos y de alta amplitud distribuidos a intervalos regulares pero acortados.
@@ -302,6 +301,7 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
 
