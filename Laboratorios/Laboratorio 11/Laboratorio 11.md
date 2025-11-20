@@ -190,72 +190,47 @@ Utilizando los índices de picos R detectados, se calcularon:
 ![Descripción de la imagen](Imagenes/Figura1.png)
 **Figura 1. Señal ECG correspondiente a un episodio de SVTA (fila 0)**  
 
-En la Figura 1 se observa el fragmento de señal ECG seleccionado del dataset, clasificado como un episodio de taquicardia supraventricular (SVTA). La señal presenta una morfología característica, con complejos QRS estrechos y de alta amplitud distribuidos a intervalos regulares pero acortados.
-
-La actividad eléctrica de base muestra oscilaciones de menor amplitud correspondientes a la actividad auricular, aunque la onda P no es claramente distinguible en todos los ciclos debido a la elevada frecuencia y posible solapamiento con el complejo QRS. Visualmente, se aprecia una repetición rápida de complejos ventriculares que sugiere un mecanismo de conducción acelerado, consistente con la fisiopatología del SVTA.
-
-Este gráfico permite identificar preliminarmente el patrón rítmico general del episodio y sirve como punto de partida para la detección automática de las ondas P, QRS y T en secciones posteriores del análisis.
+En la Figura 1 se observa el fragmento de señal ECG seleccionado del dataset, clasificado como un episodio de taquicardia supraventricular. La señal presenta una morfología característica, con complejos QRS estrechos y de alta amplitud distribuidos a intervalos regulares pero cortados. La actividad eléctrica de la muestra presenta oscilaciones de menor amplitud correspondientes a la actividad auricular. Visualmente, se aprecia una repetición rápida de complejos ventriculares que sugiere un mecanismo de conducción acelerado (consistente con la fisiopatología del SVTA). 
 
 ## 6.2. Detección del complejo QRS (picos R)
 
 ![Descripción de la imagen](Imagenes/Figura2.png)
 **Figura 2. Detección automática de los picos R del complejo QRS en la señal SVTA (fila 0)**  
 
-En la Figura 2 se presenta el resultado del algoritmo de delineación aplicado a la señal ECG, donde los picos R han sido identificados y marcados con puntos rojos. Se observa una detección consistente a lo largo de todo el fragmento, lo cual confirma que el algoritmo reconoce adecuadamente los complejos QRS incluso bajo las condiciones de frecuencia elevada presentes en la taquicardia supraventricular.
-
-Los complejos QRS detectados muestran una morfología estrecha y amplitud elevada, patrón compatible con arritmias supraventriculares en las que el origen del impulso eléctrico se encuentra por encima del nodo auriculoventricular. Asimismo, la distancia reducida entre picos R consecutivos refleja intervalos RR acortados.
-
-Este resultado constituye la base para el cálculo de los intervalos RR y la frecuencia cardíaca instantánea, y sirve además como referencia temporal para la identificación posterior de las ondas P y T.
+En la Figura 2 se presenta el resultado del algoritmo de delineación aplicado a la señal ECG, donde los picos R han sido identificados y marcados con puntos rojos. Se observa una detección consistente a lo largo de todo el fragmento, lo que nos confirma que el algoritmo reconoce adecuadamente los complejos QRS incluso bajo las condiciones de frecuencia elevada presentes en la taquicardia supraventricular. Los complejos QRS que se han detectado son estrechos y de amplitud elevada, patrón que es caracgteriticos de las arritmias supraventriculares en las que el origen del impulso eléctrico se encuentra por encima del nodo auriculo-ventricular. Asimismo, la distancia reducida entre picos R consecutivos refleja intervalos RR cortos.
 
 ## 6.3. Detección de la onda P
 
 ![Descripción de la imagen](Imagenes/Figura3.png)
 **Figura 3. Detección automática de ondas P en la señal ECG — SVTA (fila 0)**  
 
-En la Figura 3 se muestran las ondas P detectadas a lo largo del registro, marcadas con triángulos amarillos. Estas detecciones corresponden a la despolarización auricular y se observan principalmente en la porción basal de la señal, por delante del complejo QRS. Debido a la elevada frecuencia cardíaca característica de la taquicardia supraventricular, la onda P presenta amplitud reducida y en algunos ciclos se encuentra parcialmente superpuesta o cercana al complejo QRS, lo que dificulta su identificación visual.
-
-A pesar de estas limitaciones fisiológicas y morfológicas, el algoritmo empleado logra localizar un número consistente de ondas P mediante análisis en banda baja y reconocimiento de patrones pre-QRS. 
-
-La correcta detección de la onda P es especialmente relevante en episodios de SVTA, ya que permite distinguir entre distintos mecanismos de taquicardia y facilita la interpretación del origen supraventricular del ritmo.
+En la Figura 3 se muestran las ondas P detectadas a lo largo del registro, marcadas con triángulos amarillos. Estas detecciones corresponden a la despolarización auricular, por delante del complejo QRS. Debido a la elevada frecuencia cardíaca característica de la taquicardia supraventricular, la onda P presenta amplitud reducida y en algunos ciclos se encuentra parcialmente superpuesta o cercana al complejo QRS, lo que dificulta su identificación visual y por lo tanto su analisis en caso se necesario. A pesar de estas limitaciones fisiológicas y morfológicas, el algoritmo empleado logra localizar un número coherente de ondas P mediante análisis en banda baja y reconocimiento de patrones pre-QRS. La correcta detección de la onda P es especialmente relevante en episodios de SVTA, ya que permite distinguir entre distintos mecanismos de taquicardia.
 
 ## 6.4. Detección de la onda T
 
 ![Descripción de la imagen](Imagenes/Figura4.png)
 **Figura 4. Detección automática de ondas T en la señal ECG — SVTA (fila 0)**  
 
-En la Figura 4 se presentan las ondas T identificadas por el algoritmo de delineación, marcadas con cuadrados verdes. Estas detecciones corresponden al proceso de repolarización ventricular y, como es habitual, aparecen después del complejo QRS. La morfología observada muestra ondas T de amplitud moderada y formas relativamente uniformes a lo largo del registro, lo que refleja una repolarización ventricular conservada.
-
-A diferencia de la onda P, cuyo reconocimiento puede dificultarse por la cercanía temporal al QRS, la onda T mantiene una ventana fisiológica suficientemente amplia para permitir una detección más estable. No obstante, la frecuencia cardíaca elevada propia del SVTA ocasiona que las ondas T se encuentren más próximas entre sí, reduciendo el intervalo QT aparente y aumentando la superposición entre ciclos consecutivos.
-
-La correcta identificación de la onda T es esencial para analizar la dinámica de la repolarización ventricular y para completar la delineación P–QRS–T del ciclo cardíaco, permitiendo un análisis integral de la actividad eléctrica durante el episodio de taquicardia.
-
+En la Figura 4 se presentan las ondas T identificadas por el algoritmo de delineación, marcadas con cuadrados verdes. Estas detecciones corresponden al proceso de repolarización ventricular que aparecen después del complejo QRS. La morfología observada muestra ondas T de amplitud moderada y formas relativamente uniformes a lo largo de todo registro. A diferencia de la onda P, cuyo reconocimiento puede dificultarse por la cercanía temporal al QRS, la onda T mantiene ventjaa que se trata de una ventana fisiológica suficientemente amplia para permitir una detección más estable. No obstante, la frecuencia cardíaca elevada debio a SVTA ocasiona que las ondas T se encuentren más cercanas entre sí, reduciendo el intervalo QT aparente y aumentando la superposición entre ciclos consecutivos.
 
 ## 6.5. Detección conjunta de ondas P, QRS y T
 
 ![Descripción de la imagen](Imagenes/Figura5.png)
 **Figura 5. Detección simultánea de ondas P, QRS (picos R) y T en la señal SVTA (fila 0)**  
 
-En la Figura 5 se presenta la delineación completa del ciclo cardíaco, mostrando simultáneamente los tres componentes principales del ECG: la onda P (triángulos amarillos), el complejo QRS (picos R en rojo) y la onda T (cuadrados verdes). Esta visualización integrada permite apreciar la secuencia fisiológica completa de despolarización auricular, despolarización ventricular y repolarización ventricular a lo largo del registro.
-
-La distribución temporal de las detecciones evidencia intervalos RR acortados, consistentes con la frecuencia elevada típica de la taquicardia supraventricular. A pesar de esta aceleración del ritmo, la delineación automática logra identificar correctamente la mayoría de las ondas P y T, incluso en los momentos en que su morfología presenta amplitudes reducidas o proximidad al complejo QRS.
-
-Esta representación conjunta sintetiza el comportamiento eléctrico del corazón durante el episodio de SVTA, proporcionando una visión clara del patrón rítmico y facilitando el análisis posterior de intervalos, dinámicas de activación y variabilidad cardíaca.
+En la Figura 5 se presenta la delineación completa del ciclo cardíaco, mostrando simultáneamente los tres componentes principales del ECG: la onda P (triángulos amarillos), el complejo QRS (picos R en rojo) y la onda T (cuadrados verdes). Esta visualización integrada permite apreciar la secuencia fisiológica completa de despolarización auricular, despolarización ventricular y repolarización ventricular a lo largo del registro. La distribución temporal de las detecciones evidencia intervalos RR acortados, que es consistente con la frecuencia elevada típica de la taquicardia supraventricular. A pesar de esta aceleración del ritmo, la delineación automática logra identificar correctamente la mayoría de las ondas P y T, incluso en los momentos en que su morfología presenta amplitudes reducidas o proximidad al complejo QRS.
 
 ## 6.6. Zoom en un ciclo cardíaco
 
 ![Descripción de la imagen](Imagenes/Figura6.png)
 **Figura 6. Zoom en un latido mostrando ondas P, QRS y T — SVTA (fila 0)**  
 
-La Figura 6 muestra un acercamiento a un ciclo cardíaco completo con el fin de analizar en detalle la morfología de las ondas P, QRS y T. Este zoom permite identificar con mayor claridad la secuencia de activación auricular y ventricular, así como evaluar la precisión de la detección automática realizada por los algoritmos.
-
-En el intervalo alrededor de 2.55 segundos se evidencia un solapamiento parcial entre la onda P y el final de la onda T. Esta superposición es una característica frecuente en episodios de taquicardia supraventricular, donde la elevada frecuencia cardíaca reduce el intervalo TP y puede hacer que la actividad auricular aparezca muy próxima —o incluso fusionada— con la despolarización ventricular.
+La Figura 6 muestra un acercamiento a un ciclo cardíaco completo que se usa para analizar a detalle la morfología de las ondas P, QRS y T. Este zoom permite identificar con mayor claridad la secuencia de activación auricular y ventricular, así como evaluar la precisión de la detección automática realizada por los algoritmos. Por ejemplo, en el intervalo alrededor de 2.55 segundos se evidencia un solapamiento parcial entre la onda P y el final de la onda T. Esta superposición es una característica frecuente en episodios de taquicardia supraventricular, donde la elevada frecuencia cardíaca reduce el intervalo TP y puede hacer que la actividad auricular aparezca muy próxima(o se superponga) con la despolarización ventricular.
 
 Se observa que:
 - La onda P presenta una amplitud baja y duración corta.  
 - El complejo QRS es estrecho, alto y ocurre rápidamente después de la P.  
-- La onda T aparece de manera clara tras el QRS, a pesar de la cercanía entre ciclos.  
-
-Este análisis detallado confirma la correcta delineación P–QRS–T y resalta la fisiología acelerada característica del ritmo SVTA.
+- La onda T aparece de manera clara tras el QRS, a pesar de la cercanía entre ciclos. 
 
 ## 6.7. Frecuencia cardíaca instantánea (HR)
 
@@ -265,9 +240,7 @@ Este análisis detallado confirma la correcta delineación P–QRS–T y resalta
 
 La Figura 7 muestra la frecuencia cardíaca instantánea obtenida a partir de los intervalos RR detectados en la señal ECG. Los valores iniciales se encuentran notablemente elevados, con picos entre 150 y 162 bpm, lo cual es característico de la taquicardia supraventricular, cuyo rango típico puede superar los 140 bpm según lo reportado en la literatura [3].
 
-Los intervalos RR correspondientes reflejan esta aceleración del ritmo, con valores que comienzan alrededor de 370–420 ms, consistentes con una frecuencia auriculoventricular rápida. Conforme avanza el registro, se observa una variabilidad apreciable, con intervalos que aumentan hasta 800 ms y descienden nuevamente, lo cual genera oscilaciones de HR entre 73 y 126 bpm. Esta variabilidad puede deberse a fluctuaciones en la conducción AV o a la dinámica propia de la SVTA, en la cual la relación entre actividad auricular y ventricular puede modificarse de ciclo a ciclo.
-
-La figura permite visualizar la transición desde un periodo de taquicardia marcada hacia intervalos de frecuencia más moderada, lo cual concuerda con la fisiología descrita en episodios de SVT, donde pueden coexistir fases de aceleración y desaceleración parcial del ritmo [3]. Este análisis cuantitativo complementa la inspección morfológica previa y aporta una visión temporal de la dinámica del ritmo supraventricular.
+Los intervalos RR correspondientes reflejan esta aceleración del ritmo, con valores que comienzan alrededor de 370–420 ms, consistentes con una frecuencia auriculoventricular rápida. Conforme avanza el registro, se observa una marcada variabilidad, con intervalos que aumentan hasta 800 ms y descienden nuevamente, lo cual genera oscilaciones de HR entre 73 y 126 bpm. Esta variabilidad puede deberse a fluctuaciones en la conducción AV o a la dinámica propia de la SVTA, en la cual la relación entre actividad auricular y ventricular puede modificarse de ciclo a ciclo. La figura permite visualizar la transición desde un periodo fuerte de taquicardia hacia intervalos de frecuencia más moderada, lo cual concuerda con la fisiología descrita en episodios de SVT, donde pueden coexistir fases de aceleración y desaceleración parcial del ritmo [3]. 
 
 # 7. Discusión
 
@@ -308,6 +281,7 @@ La frecuencia cardíaca instantánea mostró valores iniciales entre 150 y 160 b
 | Eduardo Poma       | 33.33%                      |
 | Rodrigo Gorbeña    | 33.33%                      |
 | Jennifer Cancino   | 33.33%                      |
+
 
 
 
