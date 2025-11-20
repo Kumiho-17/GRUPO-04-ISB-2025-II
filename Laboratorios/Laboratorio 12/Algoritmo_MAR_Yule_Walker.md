@@ -40,6 +40,7 @@ El método Yule-Walker se usa para estimación de coeficientes AR a partir de la
 <center>Figura 1: Título del paper 1 [3]</center>
 
 ##### 2.1.1 Introducción 
+<p align="justify">
 El Electrocardiograma (ECG) es una herramienta fundamental en la medicina para la evaluación de la salud cardíaca. La detección características importantes, como el pico R, es crucial para el diagnóstico temprano de arritmias cardíacas y otros problemas del corazón. Dicho lo anterior, el artículo de Gupta y Mittal (2019) propone un enfoque combinado utilizando el modelo autoregresivo (AR) Yule-Walker y Análisis de Componentes Principales (PCA) para mejorar la detección del pico R en señales ECG [3].
 
 
@@ -70,6 +71,7 @@ El preprocesamiento de las señales ECG se lleva a cabo en tres fases:
 - Reducción de dimensiones: Se utiliza PCA para reducir la dimensionalidad de las señales, mejorando la eficiencia del proceso sin perder información importante [3].
 
 ###### 2.1.3.3 Extracción de Características Usando Yule-Walker
+<p align="justify">
 El modelo autoregresivo (AR) Yule-Walker es utilizado para extraer características relevantes de las señales ECG. Este modelo se basa en la representación lineal de la señal utilizando una combinación de valores pasados de la serie temporal.
 
 ###### 2.1.3.4 Funcionamiento del Modelo AR (Yule-Walker)
@@ -89,11 +91,11 @@ Para estimar los coeficientes φi, se utilizan las ecuaciones de Yule-Walker, qu
 <center><img src="https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Images/p1.jpeg?raw=true"/></center>
 <center>Figura 3:  Ecuación de Yule-Walker [3]</center>
 
-
+<p align="justify">
 Donde γm​ es la autocovarianza en el retardo mmm. Las ecuaciones de Yule-Walker permiten resolver los coeficientes φi​ a partir de los valores de autocovarianza [3].
 
 - Selección del Orden del Modelo (𝑝)
-
+<p align="justify">
 El orden 𝑝 del modelo AR es crucial. Un valor bajo de 𝑝  puede no capturar la dinámica compleja de la señal, mientras que un valor demasiado alto puede introducir sobreajuste. En este estudio, se encontró que el orden 8 proporcionaba los mejores resultados, ya que equilibraba la precisión y la complejidad del modelo [3].
 
 
@@ -152,7 +154,7 @@ El enfoque PCA+YW para la detección del pico R en señales ECG es un método ef
 <center>Figura 2: Modeling electrocardiogram using Yule-Walker equations and kernel machines [4]</center>
 
 ##### 2.2.1 Introducción 
-
+<p align="justify">
 El ECG es una señal esencial para detectar enfermedades cardíacas, pero su naturaleza no lineal dificulta su modelado con métodos lineales tradicionales como el modelo autorregresivo (AR) estimado mediante ecuaciones de Yule-Walker. Para superar esta limitación, el paper propone combinar el modelo AR con técnicas de kernel machines, que permiten transformar la señal a un espacio de alta dimensión donde el modelado lineal equivale a un modelado no lineal en el dominio original. Luego, mediante un método de pre-imagen, se recuperan predicciones interpretables en el espacio del ECG. Esta integración mejora significativamente la capacidad de representar y predecir la forma real de la señal cardíaca [4].
 
 ##### 2.2.2 Objetivo
@@ -186,12 +188,12 @@ Desarrollar un método capaz de modelar y predecir señales ECG no lineales comb
 - En la señal 8, el error del AR lineal llega a 0.221, mientras que el Kernel AR lo reduce a 0.00039.
 
 ##### 2.2.5 Discusión
-
+<p align="justify">
 Si bien los modelos autorregresivos tradicionales ofrecen una herramienta simple para analizar series temporales, su carácter estrictamente lineal limita profundamente su capacidad para modelar la morfología del ECG, especialmente en regiones no lineales como el complejo QRS. El enfoque propuesto demuestra que esta extensión no lineal supera dichas limitaciones y permite capturar dinámicas cardíacas que el AR lineal no puede representar. Los autores subrayan que la correcta resolución del problema de pre-imagen es clave para traducir predicciones realizadas en el espacio kernel al dominio original de la señal, y aunque este paso es computacionalmente más complejo, los resultados muestran una mejora significativa en la precisión del modelado. Asimismo, se destaca que el método mantiene la simplicidad conceptual del AR, a la vez que incorpora la flexibilidad de los kernels.
 
 
 ##### 2.2.6 Conclusiones
-
+<p align="justify">
 Combinar el modelo autorregresivo con técnicas de kernel machines permite modelar de forma más precisa la evolución de señales ECG al capturar sus características no lineales, especialmente en zonas complejas como el QRS, donde el AR lineal falla. Al aplicar las ecuaciones de Yule-Walker, el método logra errores menores a comparación con el AR tradicional. Los resultados con señales reales del MIT-BIH confirman que esta aproximación ofrece una representación fiel a la dinámica cardíaca y una base sólida para futuras extensiones hacia modelos ARMA o ARIMA basados en kernels [4].
 
 ### 3 Github en el que se aplicó la técnica
