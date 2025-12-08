@@ -1,0 +1,229 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <div>
+      <div class="section-label">1 · Clasificación</div>
+      <h2>Clasificar gesto EMG</h2>
+    </div>
+    <small>Sube una señal EMG en .npy o usa una señal simulada.</small>
+  </div>
+
+  <form method="POST" enctype="multipart/form-data">
+    <!-- Nombre del paciente -->
+    <div class="form-group">
+      <label for="patient_name">Nombre del paciente</label>
+      <input
+        type="text"
+        id="patient_name"
+        name="patient_name"
+        class="text-input"
+        placeholder="Ej: Juan Pérez"
+        value="{{ patient or '' }}"
+      >
+      <div class="small-hint">
+        El nombre se usará para el historial y para generar el PDF.
+      </div>
+    </div>
+
+    <!-- Archivo EMG -->
+    <div class="form-group">
+      <label for="emg_file">Señal EMG (.npy, formato Nx10)</label>
+      <input
+        type="file"
+        id="emg_file"
+        name="emg_file"
+        class="file-input"
+        accept=".npy"
+      />
+      <div class="small-hint">
+        Si no subes archivo, el sistema usará una señal EMG simulada para demostrar
+        el flujo completo de clasificación.
+      </div>
+    </div>
+
+    <button type="submit" class="btn-primary">
+      <span class="icon">⚡</span>
+      Clasificar señal EMG
+    </button>
+  </form>
+</div>
+
+<!-- Resultados de la clasificación -->
+<section class="card" style="margin-top:16px;">
+  <div class="card-header">
+    <div>
+      <div class="section-label">2 · Resultado</div>
+      <h2>Resultado de la clasificación</h2>
+    </div>
+  </div>
+
+  {% if result %}
+    <div class="result-grid">
+      <!-- Columna izquierda: info principal -->
+      <div>
+        <div class="result-title">Gesto detectado</div>
+
+        <div class="result-row">
+          <span class="label">Paciente:</span>
+          {{ result.patient }}
+        </div>
+
+        <div class="result-row">
+          <span class="label">Modelo:</span>
+          {{ result.model_display }}
+        </div>
+
+        <div class="result-row">
+          <span class="label">Gesto detectado:</span>
+          <strong>Clase {{ result.gesture_idx }} – {{ result.gesture_name }}</strong>
+        </div>
+
+        <div class="result-row">
+          <span class="label">Gesto real / referencia:</span>
+          {{ result.true_gesture_name }}
+        </div>
+
+        <!-- Barra de confianza -->
+        <div class="confidence-bar-wrapper">
+          <div class="confidence-bar-bg">
+            <div
+              class="confidence-bar-fill
+                {% if result.confidence_level == 'high' %}fill-high
+                {% elif result.confidence_level == 'medium' %}fill-medium
+                {% else %}fill-low{% endif %}"
+              style="width: {{ result.confidence_pct }}%;"></div>
+          </div>
+          <div class="confidence-text">
+            <span>Confianza del modelo</span>
+            <span>
+              {{ result.confidence_pct }}%
+              {% if result.confidence_level == 'high' %}
+                <span class="badge-confidence badge-high">Alta</span>
+              {% elif result.confidence_level == 'medium' %}
+                <span class="badge-confidence badge-medium">Media</span>
+              {% else %}
+                <span class="badge-confidence badge-low">Baja</span>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        <div class="small-hint" style="margin-top:6px;">
+          Estos resultados corresponden a una ventana EMG de 400 muestras × 10 canales,
+          preprocesada con filtrado notch (50 Hz), bandpass (20–450 Hz) y normalización
+          por canal (z-score), igual que en el entrenamiento del modelo.
+        </div>
+
+        <div class="tag-row">
+          <div class="tag-pill primary">CNN mejorada</div>
+          <div class="tag-pill">Ventanas crudas (400)</div>
+          <div class="tag-pill">Biofeedback</div>
+          <div class="tag-pill">Paciente: {{ result.patient }}</div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: probabilidades + EMG -->
+      <div>
+        <div class="result-title">Probabilidades por gesto</div>
+        <ul class="prob-list">
+          {% for g in result.probs %}
+            <li>
+              <span class="prob-label">Clase {{ g.idx }} – {{ g.name }}</span>
+              <span>{{ g.prob }} %</span>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div class="small-hint" style="margin-top:8px;">
+          El modelo entrega una distribución de probabilidad sobre los 4 gestos.
+        </div>
+
+        {% if emg_plot %}
+          <div style="margin-top:16px;">
+            <div class="result-title" style="margin-bottom:8px;">Señal EMG (canal 0)</div>
+            <div style="width:100%; height:180px;">
+              <canvas id="emgChart"></canvas>
+            </div>
+            <div class="small-hint" style="margin-top:6px;">
+              En la gráfica se muestra la señal cruda (EMG) y su envolvente RMS
+              para el canal 0. Solo se visualiza una parte muestreada para que el
+              gráfico sea legible.
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% else %}
+    <p style="font-size:13px; color:var(--text-muted);">
+      Aún no se ha clasificado ninguna señal. Ingresa el nombre del paciente, sube
+      opcionalmente un archivo <strong>.npy</strong> con EMG cruda (formato <code>N×10</code>)
+      y pulsa <strong>“Clasificar señal EMG”</strong>.
+    </p>
+  {% endif %}
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+  {% if emg_plot %}
+    <script>
+      (function() {
+        const rawData = {{ emg_plot.raw | tojson | safe }};
+        const rmsData = {{ emg_plot.rms | tojson | safe }};
+        const labels = rawData.map((_, i) => i);
+
+        const ctx = document.getElementById('emgChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [
+              {
+                label: 'EMG cruda (canal 0)',
+                data: rawData,
+                borderWidth: 1,
+                pointRadius: 0,
+                tension: 0.1
+              },
+              {
+                label: 'RMS (canal 0)',
+                data: rmsData,
+                borderWidth: 1,
+                pointRadius: 0,
+                borderDash: [4, 4],
+                tension: 0.1
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              x: {
+                display: false
+              },
+              y: {
+                ticks: {
+                  font: { size: 10 }
+                }
+              }
+            },
+            plugins: {
+              legend: {
+                labels: {
+                  font: { size: 10 }
+                }
+              }
+            },
+            elements: {
+              line: {
+                borderJoinStyle: 'round'
+              }
+            }
+          }
+        });
+      })();
+    </script>
+  {% endif %}
+{% endblock %}

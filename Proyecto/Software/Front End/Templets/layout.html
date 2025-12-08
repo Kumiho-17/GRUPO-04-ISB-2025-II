@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title if title else "EMG Hand Rehab – Stroke Support" }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <!-- Chart.js disponible para todas las vistas -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="app-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div>
+      <div class="logo-area">
+        <div class="logo-icon">EMG</div>
+        <div class="logo-text">
+          <span>Hand Rehab</span>
+          <span>Stroke Support · Proto</span>
+        </div>
+      </div>
+
+      <div class="sidebar-title">Panel</div>
+      <ul class="nav-list">
+        <li class="nav-item {% if active_page == 'dashboard' %}active{% endif %}">
+          <a href="{{ url_for('dashboard') }}">
+            <span class="icon">🏠</span> Dashboard
+          </a>
+        </li>
+        <li class="nav-item {% if active_page == 'classify' %}active{% endif %}">
+          <a href="{{ url_for('classify') }}">
+            <span class="icon">🤖</span> Clasificación
+          </a>
+        </li>
+        <li class="nav-item {% if active_page == 'train' %}active{% endif %}">
+          <a href="{{ url_for('train') }}">
+            <span class="icon">🎯</span> Entrenamiento guiado
+          </a>
+        </li>
+        <li class="nav-item {% if active_page == 'reports' %}active{% endif %}">
+          <a href="{{ url_for('reports') }}">
+            <span class="icon">📊</span> Reportes
+          </a>
+        </li>
+        <li class="nav-item {% if active_page == 'about' %}active{% endif %}">
+          <a href="{{ url_for('about') }}">
+            <span class="icon">ℹ️</span> Acerca del prototipo
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-footer">
+      <strong>Nota:</strong> Prototipo académico para explorar IA + sEMG en rehabilitación
+      post-ACV. No es un dispositivo médico real.
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <header class="top-header">
+      <div class="title-block">
+        <h1>EMG Hand Rehab – Stroke Support</h1>
+        <p>Reconocimiento de gestos de mano con EMG como apoyo a la rehabilitación post-ACV.</p>
+      </div>
+      <div class="badge-pill">
+        <span class="icon">🧠</span>
+        {% if patient %}
+          Paciente: <strong>{{ patient }}</strong>
+        {% else %}
+          Sin paciente activo
+        {% endif %}
+      </div>
+    </header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-container">
+          {% for category, msg in messages %}
+            <div class="flash flash-{{ category }}">{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+
+    <div class="footer-note">
+      Prototipo académico · Ingeniería Biomédica · IA + sEMG para apoyo a la rehabilitación post-ACV.
+    </div>
+
+    {# 🔹 Scripts extra específicos de cada página (ej. la gráfica EMG) #}
+    {% block extra_scripts %}{% endblock %}
+  </main>
+</div>
+</body>
+</html>
