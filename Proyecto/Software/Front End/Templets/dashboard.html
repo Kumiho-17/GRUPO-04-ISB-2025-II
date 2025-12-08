@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="card">
+  <div class="card-header">
+    <div>
+      <div class="section-label">Dashboard</div>
+      <h2>Resumen general del paciente</h2>
+    </div>
+  </div>
+
+  {% if not patient %}
+    <p class="muted">
+      No hay paciente activo. Ve a <strong>Clasificación</strong> o <strong>Entrenamiento</strong> y registra un nombre de paciente.
+    </p>
+  {% else %}
+    <div class="dashboard-grid">
+      <div class="stat-card">
+        <div class="stat-label">Intentos totales</div>
+        <div class="stat-value">{{ overview.total_attempts }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Intentos en entrenamiento</div>
+        <div class="stat-value">{{ overview.train_attempts }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Aciertos en entrenamiento</div>
+        <div class="stat-value">{{ overview.train_success }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Precisión global (entrenamiento)</div>
+        <div class="stat-value">
+          {% if overview and overview.train_accuracy is not none %}
+            {{ overview.train_accuracy }}%
+          {% else %}
+            –
+          {% endif %}
+        </div>
+      </div>
+
+
+    <p class="muted" style="margin-top:16px;">
+      Este resumen se basa únicamente en los intentos registrados para el paciente activo.
+      Para ver más detalle, utiliza las vistas de <strong>Clasificación</strong>, <strong>Entrenamiento</strong> y <strong>Reportes</strong>.
+    </p>
+  {% endif %}
+</section>
+{% endblock %}
