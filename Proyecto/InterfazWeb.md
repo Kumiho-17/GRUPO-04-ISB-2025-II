@@ -6,7 +6,7 @@
   _[https://drive.google.com/file/d/158CEFk53HA-zhElTgPDwDCWkQGWCYZdA/view?usp=drive_link]_
 
 - 🌐 **Enlace al sistema en vivo (ngrok u otro):**  
-  _[[Pegar aquí el enlace público cuando el servidor esté activo](https://furthermost-martyrly-tania.ngrok-free.dev -> http://localhost:5000  )]_
+  _[(https://furthermost-martyrly-tania.ngrok-free.dev)]_
 
 ---
 
@@ -416,6 +416,7 @@ No se muestran métricas ni se guardan datos desde esta vista.
 | **Entrenamiento guiado**| Gesto objetivo, gesto detectado, biofeedback       | Ingresar paciente, elegir gesto, evaluar intento     | ✅ Registra intentos    |
 | **Reportes**            | Gráficas por gesto + tabla de historial + botón PDF| Revisar desempeño, exportar reporte en PDF           | ✅ Usa historial previo |
 | **Acerca del prototipo**| Texto descriptivo del proyecto                      | Solo leer información                                | ❌                      |
+
 
 
 
