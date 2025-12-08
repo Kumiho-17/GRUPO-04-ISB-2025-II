@@ -1,6 +1,6 @@
-## <center>UNIVERSIDAD PERUANA CAYETANO HEREDIA
-## <center>FACULTAD DE CIENCIAS E INGENIERÍA
-### <center>Sistema de Reconocimiento de Gestos de Mano con sEMG para la Rehabilitación Post-Accidente Cerebrovascular<center>
+## <p align="center">UNIVERSIDAD PERUANA CAYETANO HEREDIA
+## <p align="center">FACULTAD DE CIENCIAS E INGENIERÍA
+### <p align="center">Sistema de Reconocimiento de Gestos de Mano con sEMG para la Rehabilitación Post-Accidente Cerebrovascular
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Logo.png?raw=true/></center>
 
 
@@ -73,7 +73,7 @@ Ante la falta de evaluaciones objetivas en la rehabilitación del miembro superi
 La matriz de confusión indica que el modelo logró identificar correctamente la mayoría de los cuatro gestos (G1–G4). Sin embargo, se observan confusiones entre los gestos G2 y G3, por lo que se ve solapamiento en sus patrones musculares.
 El modelo sí captura información relevante, pero aún no separa completamente gestos con activaciones musculares cercanas.
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%201.png?raw=true/></center>
-<center>Figura 1:   Matriz de Confusión de CNN Base [Fuente: Elaboración propia]</center>
+<p align="center">Figura 1:   Matriz de Confusión de CNN Base [Fuente: Elaboración propia]
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%201.png?raw=true/></center>
 <center>Figura 2:  (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Base [Fuente: Elaboración propia]</center>
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%201.png?raw=true/></center><center>Figura 3:  (a) PCA. (b) t-SNE de CNN Base [Fuente: Elaboración propia]</center>
