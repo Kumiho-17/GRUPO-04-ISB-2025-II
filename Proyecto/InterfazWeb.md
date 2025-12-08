@@ -382,9 +382,6 @@ Comportamiento:
   - Aciertos de entrenamiento.  
   - Un listado línea por línea del historial (modo, gesto detectado, confianza, objetivo y resultado).
 
-⚠️ **Limitación actual:**  
-El PDF exportado **no incluye las gráficas** del dashboard o de Chart.js; solo contiene texto y números.
-
 ![Figura 4 – Módulo Clasificación](Imágenes/Figura8.png)
 
 > 🖼️ **Figura 8. Botón de exportación a PDF en el módulo de Reportes.**
@@ -416,6 +413,7 @@ No se muestran métricas ni se guardan datos desde esta vista.
 | **Entrenamiento guiado**| Gesto objetivo, gesto detectado, biofeedback       | Ingresar paciente, elegir gesto, evaluar intento     | ✅ Registra intentos    |
 | **Reportes**            | Gráficas por gesto + tabla de historial + botón PDF| Revisar desempeño, exportar reporte en PDF           | ✅ Usa historial previo |
 | **Acerca del prototipo**| Texto descriptivo del proyecto                      | Solo leer información                                | ❌                      |
+
 
 
 
