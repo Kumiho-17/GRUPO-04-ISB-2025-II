@@ -89,6 +89,8 @@ En la **sidebar** se muestran:
 
 La sección activa se muestra resaltada (por CSS) para indicar en qué módulo se encuentra el usuario.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura1.png)
+
 > 🖼️ **Figura 1. Vista general de la interfaz con la barra lateral y el área de contenido.**
 
 ---
@@ -397,5 +399,6 @@ No se muestran métricas ni se guardan datos desde esta vista.
 | **Entrenamiento guiado**| Gesto objetivo, gesto detectado, biofeedback       | Ingresar paciente, elegir gesto, evaluar intento     | ✅ Registra intentos    |
 | **Reportes**            | Gráficas por gesto + tabla de historial + botón PDF| Revisar desempeño, exportar reporte en PDF           | ✅ Usa historial previo |
 | **Acerca del prototipo**| Texto descriptivo del proyecto                      | Solo leer información                                | ❌                      |
+
 
 
