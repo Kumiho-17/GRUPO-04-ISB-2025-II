@@ -106,6 +106,8 @@ En la parte superior del contenido principal se incluye:
   - El nombre del paciente actual, si se ha registrado.  
   - El texto `Sin paciente activo` si aún no se ha ingresado un nombre.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura2.png)
+
 > 🖼️ **Figura 2. Encabezado principal con título del sistema y nombre del paciente activo.**
 
 ---
@@ -127,6 +129,8 @@ Características importantes:
 
 - El Dashboard es **solo lectura**: no se suben archivos ni se hacen acciones de clasificación.  
 - Sirve para que el profesional vea rápidamente si el paciente mejora o no durante la sesión.
+
+![Figura 4 – Módulo Clasificación](Imágenes/Figura3.png)
 
 > 🖼️ **Figura 3. Módulo Dashboard con las tarjetas de resumen de desempeño.**
 
@@ -198,6 +202,9 @@ También:
   - gesto detectado  
   - nivel de confianza  
   - timestamp (fecha y hora)
+
+![Figura 4 – Módulo Clasificación](Imágenes/Figura4.png)
+![Figura 4 – Módulo Clasificación](Imágenes/Figura41.png)
 
 > 🖼️ **Figura 4. Módulo Clasificación con formulario, gesto detectado y gráfica EMG + RMS.**
 
@@ -280,6 +287,8 @@ Cada intento de entrenamiento se guarda en el historial con:
 - `confidence_pct`.  
 - timestamp y paciente.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura5.png)
+
 > 🖼️ **Figura 5. Módulo Entrenamiento guiado con gesto objetivo, gesto detectado, biofeedback y barra de confianza.**
 
 ---
@@ -322,6 +331,8 @@ Interpretación:
 - Si el paciente mejora en un gesto, la curva tiende a subir.  
 - Si hay muchos fallos, la curva se estabiliza o baja.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura6.png)
+
 > 🖼️ **Figura 6. Gráficas de precisión acumulada por gesto en el módulo de Reportes.**
 
 ---
@@ -348,6 +359,8 @@ Columnas típicas:
   - `❌ Fallo` si `match_target` es `False`.  
   - `–` en clasificación.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura7.png)
+
 > 🖼️ **Figura 7. Tabla de historial detallado con intentos de clasificación y entrenamiento.**
 
 ---
@@ -372,6 +385,8 @@ Comportamiento:
 ⚠️ **Limitación actual:**  
 El PDF exportado **no incluye las gráficas** del dashboard o de Chart.js; solo contiene texto y números.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura8.png)
+
 > 🖼️ **Figura 8. Botón de exportación a PDF en el módulo de Reportes.**
 
 ---
@@ -386,6 +401,8 @@ La sección **Acerca del prototipo** cumple una función informativa. Allí se e
 
 No se muestran métricas ni se guardan datos desde esta vista.
 
+![Figura 4 – Módulo Clasificación](Imágenes/Figura9.png)
+
 > 🖼️ **Figura 9. Página “Acerca del prototipo” con la descripción del proyecto.**
 
 ---
@@ -399,6 +416,7 @@ No se muestran métricas ni se guardan datos desde esta vista.
 | **Entrenamiento guiado**| Gesto objetivo, gesto detectado, biofeedback       | Ingresar paciente, elegir gesto, evaluar intento     | ✅ Registra intentos    |
 | **Reportes**            | Gráficas por gesto + tabla de historial + botón PDF| Revisar desempeño, exportar reporte en PDF           | ✅ Usa historial previo |
 | **Acerca del prototipo**| Texto descriptivo del proyecto                      | Solo leer información                                | ❌                      |
+
 
 
 
