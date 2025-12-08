@@ -75,8 +75,9 @@ El modelo sí captura información relevante, pero aún no separa completamente 
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%201.png?raw=true/></center>
 <p align="center">Figura 1:   Matriz de Confusión de CNN Base [Fuente: Elaboración propia]
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%201.png?raw=true/></center>
-<center>Figura 2:  (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Base [Fuente: Elaboración propia]</center>
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%201.png?raw=true/></center><center>Figura 3:  (a) PCA. (b) t-SNE de CNN Base [Fuente: Elaboración propia]</center>
+<p align="center">Figura 2:  (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Base [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%201.png?raw=true/></center>
+<p align="center">Figura 3:  (a) PCA. (b) t-SNE de CNN Base [Fuente: Elaboración propia]</center>
 
 #### <p align="justify">4.2 Modelo 2 (CNN Mejorada)
 
@@ -103,10 +104,10 @@ Además, al visualizar las representaciones internas mediante PCA y t-SNE se obs
 
 
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%202.png?raw=true/></center>
-<center>Figura 4. Matriz de Confusión de CNN Mejorada [Fuente: Elaboración propia]</center>
+<p align="center">Figura 4. Matriz de Confusión de CNN Mejorada [Fuente: Elaboración propia]</center>
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%202.png?raw=true/></center>
-<center>Figura 5. (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Mejorada [Fuente: Elaboración propia]</center>
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%202.png?raw=true/></center><center>Figura 6. (a) PCA. (b) t-SNE de CNN Mejorada [Fuente: Elaboración propia]</center>
+<p align="center">Figura 5. (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Mejorada [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%202.png?raw=true/></center><p align="center">Figura 6. (a) PCA. (b) t-SNE de CNN Mejorada [Fuente: Elaboración propia]</center>
 
 #### <p align="justify">4.3 Modelo 3 (MLP (110 features))
 
@@ -124,10 +125,10 @@ El PCA mostró agrupamientos parciales pero con solapamiento entre clases, lo cu
 
 
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%203.png?raw=true/></center>
-<center>Figura 7. Matriz de Confusión de MLP [Fuente: Elaboración propia]</center>
+<p align="center">Figura 7. Matriz de Confusión de MLP [Fuente: Elaboración propia]</center>
 <center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%203.png?raw=true/></center>
-<center>Figura 8. (a) Curva de Exactitud. (b) Curva de Pérdida de MLP [Fuente: Elaboración propia]</center>
-<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%203.png?raw=true/></center><center>Figura 9. (a) PCA. (b) t-SNE de MLP [Fuente: Elaboración propia]</center>
+<p align="center">Figura 8. (a) Curva de Exactitud. (b) Curva de Pérdida de MLP [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%203.png?raw=true/></center><p align="center">Figura 9. (a) PCA. (b) t-SNE de MLP [Fuente: Elaboración propia]</center>
 
 
 ### <p align="justify">5. Conclusiones
