@@ -3,10 +3,10 @@
 ## 🔗 Enlaces del prototipo
 
 - 🎥 **Video demostrativo (Drive):**  
-  _[Pegar aquí el enlace al video en Drive]_
+  _[https://drive.google.com/file/d/158CEFk53HA-zhElTgPDwDCWkQGWCYZdA/view?usp=drive_link]_
 
 - 🌐 **Enlace al sistema en vivo (ngrok u otro):**  
-  _[Pegar aquí el enlace público cuando el servidor esté activo]_
+  _[[Pegar aquí el enlace público cuando el servidor esté activo](https://furthermost-martyrly-tania.ngrok-free.dev -> http://localhost:5000  )]_
 
 ---
 
@@ -32,7 +32,6 @@
    - 7.4. [Exportación a PDF](#74-exportación-a-pdf)  
 8. [Módulo **Acerca del prototipo**](#8-módulo-acerca-del-prototipo)  
 9. [Resumen rápido: qué se puede hacer en cada sección](#9-resumen-rápido-qué-se-puede-hacer-en-cada-sección)  
-10. [Listado sugerido de figuras para el README](#10-listado-sugerido-de-figuras-para-el-readme)  
 
 ---
 
@@ -399,23 +398,4 @@ No se muestran métricas ni se guardan datos desde esta vista.
 | **Reportes**            | Gráficas por gesto + tabla de historial + botón PDF| Revisar desempeño, exportar reporte en PDF           | ✅ Usa historial previo |
 | **Acerca del prototipo**| Texto descriptivo del proyecto                      | Solo leer información                                | ❌                      |
 
----
 
-# 10. Listado sugerido de figuras para el README
-
-Puedes incluir capturas de pantalla de la interfaz y referenciarlas así:
-
-- **Figura 1.** Vista general de la interfaz (sidebar + contenido principal).  
-- **Figura 2.** Encabezado principal con título del sistema y estado del paciente.  
-- **Figura 3.** Módulo Dashboard con tarjetas de resumen.  
-- **Figura 4.** Módulo Clasificación con formulario, resultado y gráfica EMG.  
-- **Figura 5.** Módulo Entrenamiento guiado con biofeedback y barra de confianza.  
-- **Figura 6.** Módulo Reportes con gráficas de precisión por gesto.  
-- **Figura 7.** Tabla de historial detallado.  
-- **Figura 8.** Botón de exportación a PDF en la vista de Reportes.  
-- **Figura 9.** Página “Acerca del prototipo”.
-
-Ejemplo de cómo insertarlas en Markdown:
-
-```md
-![Figura 4 – Módulo Clasificación](Imagenes/figura4_clasificacion.png)
