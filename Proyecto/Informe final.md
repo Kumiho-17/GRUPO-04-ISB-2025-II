@@ -152,6 +152,10 @@ E. Poma
 J. Cancino
 R. Gorbeña
 
+### Anexo
+
+**Video explicativo**: https://drive.google.com/file/d/158CEFk53HA-zhElTgPDwDCWkQGWCYZdA/view?usp=drive_link
+**Front end**: https://furthermost-martyrly-tania.ngrok-free.dev 
 
 
 
