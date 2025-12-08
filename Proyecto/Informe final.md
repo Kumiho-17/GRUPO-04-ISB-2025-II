@@ -1,5 +1,5 @@
-## <center>UNIVERSIDAD PERUANA CAYETANO HEREDIA<center>
-## <center>FACULTAD DE CIENCIAS E INGENIERÍA<center>
+## <center>UNIVERSIDAD PERUANA CAYETANO HEREDIA
+## <center>FACULTAD DE CIENCIAS E INGENIERÍA
 
 
 ### <center>Sistema de Reconocimiento de Gestos de Mano con sEMG para la Rehabilitación Post-Accidente Cerebrovascular<center>
