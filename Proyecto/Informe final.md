@@ -4,23 +4,40 @@
 
 ### <center>Sistema de Reconocimiento de Gestos de Mano con sEMG para la Rehabilitación Post-Accidente Cerebrovascular<center>
 
-### :date: Tabla de contenidos
-- [1. Introducción](#1.Introducción)
-- [2. Planteamiento del problema](#2.Planteamiento-del-problema)
-- [3. Propuesta de solución](#3.Propuesta-de-solución)
-- [4. Resultados](#4.Resultados)
-- [5. Conclusión](#5.Conclusión)
-
-
-<center>Integrantes:<center>
-<center>Eduardo Poma Soto<center>
-<center>Jenniffer Cancino Cordero<center>
-<center>Rodrigo Gorbeña Salarza<center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Logo.png?raw=true/></center>
 
 
 
-<center>Docente:<center>
-<center>Meza Rodriguez Moises Stevend<center>
+Integrantes:
+Eduardo Poma Soto
+Jenniffer Cancino Cordero
+Rodrigo Gorbeña Galarza
+
+
+
+Docente:
+Meza Rodriguez Moises Stevend
+
+
+
+
+#### Resumen 
+<p align="justify">
+El presente trabajo desarrolla un sistema de reconocimiento de gestos de mano basado en electromiografía de superficie (sEMG) orientado a la rehabilitación de pacientes post-accidente cerebrovascular (ACV). Considerando la necesidad de herramientas objetivas y escalables para el seguimiento funcional del miembro superior —especialmente en contextos de telerehabilitación— se evaluaron tres modelos de clasificación: una CNN base, una CNN mejorada y un MLP entrenado con 110 características temporales y frecuenciales. Los resultados muestran que las CNN superan ampliamente al enfoque basado en features manuales, alcanzando la CNN mejorada una exactitud de 95.5% y separaciones más definidas entre gestos en representaciones PCA y t-SNE. Los hallazgos evidencian que la extracción automática de patrones musculares multicanal captura de manera más eficaz la fisiología del movimiento, constituyendo una alternativa robusta para el seguimiento objetivo del progreso motor en rehabilitación post-ACV.
+
+**Palabras clave:** sEMG, rehabilitación post-ACV, reconocimiento de gestos, CNN, MLP, aprendizaje profundo, telerehabilitación, análisis de señales biomédicas.
+
+
+### <p align="justify">:date: Tabla de contenidos
+
+- [1. Introducción](#1-introducción)
+- [2. Planteamiento del problema](#2-planteamiento-del-problema)
+- [3. Propuesta de solución](#3-propuesta-de-solución)
+- [4. Resultados](#4-resultados)
+    - [4.1 Modelo 1 - CNN Base](#41-modelo-1-cnn-base)
+    - [4.2 Modelo 2 - CNN Mejorada](#42-modelo-2-cnn-mejorada)
+    - [4.3 Modelo 3 - MLP (110 features)](#43-modelo-3-mlp-110-features)
+- [5. Conclusión](#5-conclusiones)
 
 ### <p align="justify">1. Introducción
 <p align="justify">
@@ -45,7 +62,7 @@ El ACV es una de las principales causas de discapacidad, con alta carga de enfer
 Ante la falta de evaluaciones objetivas en la rehabilitación del miembro superior post-ACV, este estudio propone implementar un sistema de reconocimiento de gestos de mano basado en electromiografía de superficie (sEMG) orientado a seguimiento de rehabilitación post-ACV. El objetivo es cuantificar la activación muscular y ofrecer biofeedback para complementar la evaluación, especialmente en contextos de telerehabilitación. Para ello, los pacientes realizan gestos específicos del miembro superior mientras se registran señales sEMG, las cuales serán procesadas y clasificadas para identificar patrones de recuperación. Con ello se busca lograr un seguimiento preciso y continuo del progreso funcional.
 
 ### <p align="justify">4. Resultados
-#### <p align="justify">4.1 Modelo 1 - CNN Base
+#### <p align="justify">4.1 Modelo 1 (CNN Base)
 
 <p align="justify">
  El primer modelo evaluado fue una red neuronal convolucional (CNN) entrenada sobre ventanas crudas de la señal EMG previamente filtrada, rectificada y normalizada. Durante el entrenamiento, el modelo mostró una curva de aprendizaje estable con mejoría progresiva tanto en precisión como en pérdida. Tras 30 épocas de entrenamiento, el modelo alcanzó:
@@ -58,8 +75,13 @@ Ante la falta de evaluaciones objetivas en la rehabilitación del miembro superi
 <p align="justify">
 La matriz de confusión indica que el modelo logró identificar correctamente la mayoría de los cuatro gestos (G1–G4). Sin embargo, se observan confusiones entre los gestos G2 y G3, por lo que se ve solapamiento en sus patrones musculares.
 El modelo sí captura información relevante, pero aún no separa completamente gestos con activaciones musculares cercanas.
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%201.png?raw=true/></center>
+<center>Figura 1:   Matriz de Confusión de CNN Base [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%201.png?raw=true/></center>
+<center>Figura 2:  (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Base [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%201.png?raw=true/></center><center>Figura 3:  (a) PCA. (b) t-SNE de CNN Base [Fuente: Elaboración propia]</center>
 
-#### <p align="justify">4.2 Modelo 2 - CNN Mejorada
+#### <p align="justify">4.2 Modelo 2 (CNN Mejorada)
 
 <p align="justify">
 El segundo modelo corresponde a una optimización de la CNN base, incorporando técnicas para reducir el sobreajuste y mejorar la generalización. Para ello, se añadieron diferentes mecanismos durante el entrenamiento:
@@ -82,7 +104,14 @@ La matriz de confusión mostró reducir la confusión entre gestos similares, G2
 <p align="justify">
 Además, al visualizar las representaciones internas mediante PCA y t-SNE se observan agrupamientos más definidos y compactos en el espacio de 128 dimensiones. Esto confirma que el modelo mejorado logra aprender características fisiológicas más significativas, separando adecuadamente cada gesto muscular.
 
-#### <p align="justify">4.3 Modelo 3 - MLP (110 features)
+
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%202.png?raw=true/></center>
+<center>Figura 4. Matriz de Confusión de CNN Mejorada [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%202.png?raw=true/></center>
+<center>Figura 5. (a) Curva de Exactitud. (b) Curva de Pérdida de CNN Mejorada [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%202.png?raw=true/></center><center>Figura 6. (a) PCA. (b) t-SNE de CNN Mejorada [Fuente: Elaboración propia]</center>
+
+#### <p align="justify">4.3 Modelo 3 (MLP (110 features))
 
 <p align="justify">
 Para este último modelo se emplearon 110 features (10 canales y 11 características) extraídos por cada ventana EMG, combinando métricas temporales (MAV, RMS, WL, ZC, SSC, VAR) y frecuenciales (MNF, MDF, entropía espectral, potencias de banda, PSR). Estas características fueron escaladas para posteriormente ser utilizadas al entrenar un perceptrón multicapa con tres capas densas. El modelo obtuvo los siguientes valores en el conjunto de pruebas: Exactitud, precisión, recall, F1-score = 91%
@@ -97,6 +126,13 @@ La curva de pérdida disminuye establemente sin signos de sobreajuste. La curva 
 El PCA mostró agrupamientos parciales pero con solapamiento entre clases, lo cual es esperable dado que la reducción lineal conserva solo ~55–60% de la varianza total.
 
 
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Confusi%C3%B3n%203.png?raw=true/></center>
+<center>Figura 7. Matriz de Confusión de MLP [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/Exactitud%20y%20p%C3%A9rdida%203.png?raw=true/></center>
+<center>Figura 8. (a) Curva de Exactitud. (b) Curva de Pérdida de MLP [Fuente: Elaboración propia]</center>
+<center><img src=https://github.com/Kumiho-17/GRUPO-04-ISB-2025-II/blob/master/Proyecto/Im%C3%A1genes/PCA%20y%20t-SNE%203.png?raw=true/></center><center>Figura 9. (a) PCA. (b) t-SNE de MLP [Fuente: Elaboración propia]</center>
+
+
 ### <p align="justify">5. Conclusiones
 
 - <p align="justify">El modelo 1 - CNN base tuvo un comportamiento de sobreajuste, con una exactitud alta durante el entrenamiento, pero una validación y prueba menor. Este patrón indica que la red aprendió a memorizar las características específicas del conjunto de entrenamiento en lugar de aprender patrones fisiológicos generales del EMG que sean representativos del movimiento. La ausencia de mecanismos de regularización suficientes, hizo que el modelo incrementara su complejidad efectiva, ajustándose solo a los datos vistos. Como consecuencia, cuando se evaluó con ventanas no vistas, la capacidad de generalización disminuyó, reflejando que el modelo no era robusto frente a nuevas señales, a pesar de su aparente buen rendimiento durante el entrenamiento.
@@ -104,7 +140,7 @@ El PCA mostró agrupamientos parciales pero con solapamiento entre clases, lo cu
 - <p align="justify">Los resultados evidencian que los modelos basados en redes neuronales convolucionales (CNN) superan al modelo basado en características manuales (MLP con 110 features). Esto ocurre porque las CNN aprenden directamente patrones espaciales y temporales relevantes a partir de las señales EMG multicanal. A diferencia del modelo MLP que depende de descriptores previamente definidos, los cuales no capturan la fisiología del movimiento.
 
 
-### <p align="justify">6. Referencias
+### <p align="justify"> Referencias
 
 <p align="justify">[1] V. L. Feigin et al., “World Stroke Organization Global Stroke Fact Sheet 2025,” Int. J. Stroke, 2025. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC11786524/
 <p align="justify">[2] K. Pacheco-Barrios et al., “Burden of Stroke and Population-Attributable Fractions of Risk Factors in Latin America and the Caribbean,” J. Am. Heart Assoc., vol. 11, no. 21, e027044, 2022. DOI: 10.1161/JAHA.122.027044.
@@ -112,6 +148,12 @@ El PCA mostró agrupamientos parciales pero con solapamiento entre clases, lo cu
 <p align="justify">[4] NICE, Stroke rehabilitation in adults: evidence review on telerehabilitation (NG236), 2023. Disponible en: https://www.ncbi.nlm.nih.gov/books/NBK600502/bin/niceng236er14-appk-et1.pdf
 <p align="justify">[5] R. Wang et al., “Electromyographic biofeedback therapy for improving limb function after stroke: A meta-analysis,” Front. Neurol., 2024. PMID: 38206927. Disponible en: https://pubmed.ncbi.nlm.nih.gov/38206927/
 <p align="justify">[6] M. Al-Ayyad et al., “Electromyography Monitoring Systems in Rehabilitation: A Review of Clinical Applications, Wearable Devices and Signal Acquisition Methodologies,” Electronics, vol. 12, no. 7, 1520, 2023. DOI: 10.3390/electronics12071520. Disponible en: https://www.mdpi.com/2079-9292/12/7/1520
+
+### Biografías de autores
+E. Poma 
+J. Cancino
+R. Gorbeña
+
 
 
 
