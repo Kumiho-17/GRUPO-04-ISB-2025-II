@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="card">
+  <div class="card-header">
+    <div>
+      <div class="section-label">Reportes</div>
+      <h2>Desempeño del paciente por gesto y modelo</h2>
+    </div>
+    <div>
+      {% if patient %}
+        <a href="{{ url_for('download_pdf') }}" class="btn-secondary">⬇ Exportar PDF</a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if not patient %}
+    <p class="muted">
+      No hay paciente activo. Registra primero un paciente en <strong>Clasificación</strong> o
+      <strong>Entrenamiento</strong>.
+    </p>
+  {% else %}
+    {% if not history %}
+      <p class="muted">
+        Aún no hay intentos registrados para este paciente. Genera algunos intentos en
+        <strong>Clasificación</strong> o <strong>Entrenamiento</strong>.
+      </p>
+    {% else %}
+      <div class="reports-grid">
+        {% for g in chart_data %}
+          <div class="report-card">
+            <div class="report-title">
+              Gesto {{ g.idx }} – {{ g.name }}
+            </div>
+            <canvas id="chart-gesture-{{ g.idx }}"></canvas>
+          </div>
+        {% endfor %}
+      </div>
+
+      <h3 style="margin-top:18px; font-size:15px;">Historial detallado</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+          <tr>
+            <th>Fecha y hora</th>
+            <th>Modo</th>
+            <th>Modelo</th>
+            <th>Gesto real</th>
+            <th>Gesto detectado</th>
+            <th>Conf.</th>
+            <th>Objetivo</th>
+            <th>Resultado</th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for h in history|reverse %}
+            <tr>
+              <td>{{ h.timestamp }}</td>
+              <td>{{ h.mode }}</td>
+              <td>{{ h.model_display }}</td>
+              <td>{{ h.true_gesture_name }}</td>
+              <td>{{ h.gesture_name }}</td>
+              <td>{{ h.confidence_pct }}%</td>
+              <td>
+                {% if h.target_gesture is not none %}
+                  {{ gesture_labels[h.target_gesture] }}
+                {% else %}
+                  –
+                {% endif %}
+              </td>
+              <td>
+                {% if h.target_gesture is none %}
+                  –
+                {% elif h.match_target %}
+                  ✅ Acierto
+                {% else %}
+                  ❌ Fallo
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  {% endif %}
+</section>
+
+{% if patient and history %}
+<script>
+  const chartData = {{ chart_data | tojson }};
+
+  chartData.forEach(g => {
+    const canvasId = `chart-gesture-${g.idx}`;
+    const ctx = document.getElementById(canvasId).getContext('2d');
+
+    const labels = [];
+    // El eje X será el índice del intento, pero solo para este gesto
+    let maxLen = 0;
+    g.models.forEach(m => {
+      if (m.values.length > maxLen) {
+        maxLen = m.values.length;
+      }
+    });
+    for (let i = 0; i < maxLen; i++) {
+      labels.push(i + 1);
+    }
+
+    const datasets = g.models.map((m, idx) => ({
+      label: m.name,
+      data: m.values,
+      borderWidth: 1,
+      pointRadius: 0
+    }));
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: datasets
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { labels: { font: { size: 10 } } }
+        },
+        scales: {
+          x: {
+            title: { display: true, text: 'Intento', font: { size: 10 } },
+            ticks: { font: { size: 9 } }
+          },
+          y: {
+            title: { display: true, text: 'Precisión acumulada (%)', font: { size: 10 } },
+            ticks: { font: { size: 9 } },
+            min: 0,
+            max: 100
+          }
+        }
+      }
+    });
+  });
+</script>
+{% endif %}
+{% endblock %}

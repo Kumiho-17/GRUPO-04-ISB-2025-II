@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="card">
+  <div class="card-header">
+    <div>
+      <div class="section-label">Acerca del prototipo</div>
+      <h2>Contexto clínico y técnico</h2>
+    </div>
+  </div>
+
+  <p class="muted" style="line-height:1.6;">
+    Este prototipo explora el uso de <strong>electromiografía de superficie (sEMG)</strong> y
+    <strong>modelos de IA</strong> para reconocer cuatro gestos funcionales de mano
+    (open bottle, lateral grasp, parallel extension grasp y power grasp) en el contexto de
+    <strong>rehabilitación del miembro superior post-ACV</strong>.
+  </p>
+
+  <p class="muted" style="line-height:1.6; margin-top:8px;">
+    La implementación actual utiliza datos completamente simulados, pero la arquitectura
+    del front-end y del back-end está pensada para conectarse en el futuro a señales
+    reales provenientes de armbands o electrodos sEMG, y a modelos entrenados con
+    bases de datos como <strong>NinaPro DB1</strong>.
+  </p>
+
+  <p class="muted" style="line-height:1.6; margin-top:8px;">
+    El objetivo es ofrecer una interfaz tipo dashboard clínico que permita a un terapeuta
+    visualizar el desempeño de un paciente, registrar intentos de entrenamiento y generar
+    reportes en PDF por paciente, integrando un módulo de clasificación de gestos,
+    biofeedback visual y estadísticas de progreso.
+  </p>
+
+  <div class="tag-row" style="margin-top:10px;">
+    <div class="tag-pill primary">sEMG</div>
+    <div class="tag-pill">Rehabilitación post-ACV</div>
+    <div class="tag-pill">MLP</div>
+    <div class="tag-pill">CNN</div>
+    <div class="tag-pill">Biofeedback</div>
+    <div class="tag-pill">Reportes PDF</div>
+  </div>
+</section>
+{% endblock %}
